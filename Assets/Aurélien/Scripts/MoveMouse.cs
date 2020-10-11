@@ -30,10 +30,6 @@ public class MoveMouse : MonoBehaviour
             radius = 1;
             loading = true;
             pos = c.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -c.transform.position.z));
-<<<<<<< HEAD
-            Debug.Log("pos = " + pos);
-=======
->>>>>>> 810431d3b981361819993c7283c8a5f199b4d8af
             direction = pos - transform.position;
             if (pos.x > transform.position.x)
             {
@@ -69,11 +65,6 @@ public class MoveMouse : MonoBehaviour
             }*/
 
             theta = Vector2.SignedAngle(new Vector2(1, 0), -direction) / 180 * Mathf.PI;
-<<<<<<< HEAD
-            Debug.Log("theta = " + theta);
-
-=======
->>>>>>> 810431d3b981361819993c7283c8a5f199b4d8af
             moving = true;
             trajectory.transform.position = center;
             trajectory.transform.localScale = 2 * radius * Vector3.one;
