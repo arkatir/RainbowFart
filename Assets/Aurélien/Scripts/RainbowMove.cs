@@ -20,11 +20,11 @@ public class RainbowMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && !moving)
+        /*if (Input.GetKeyDown(KeyCode.Space) && !moving)
         {
             rb.velocity = Vector2.up * speed;
             moving = true;
-        };
+        }
 
         if(moving)
         {
@@ -38,5 +38,5 @@ public class RainbowMove : MonoBehaviour
     {
         moving = false;
         rb.velocity = Vector2.zero;
-    }
+    */}
 }

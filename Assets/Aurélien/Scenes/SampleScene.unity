@@ -150,7 +150,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 156695778}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 519e8515dd6004ff7bc54d30d0013275, type: 2}
+  m_Material: {fileID: 6200000, guid: ebee67dc1412e4a45a54dad7ccd794fa, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -208,7 +208,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c64a799a2217a47aaaf943937f160d1b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.29679218, b: 0.9245283, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -678,7 +678,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 790918081}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 519e8515dd6004ff7bc54d30d0013275, type: 2}
+  m_Material: {fileID: 6200000, guid: ebee67dc1412e4a45a54dad7ccd794fa, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -736,7 +736,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c64a799a2217a47aaaf943937f160d1b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.15571739, b: 0.9528302, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1073,7 +1073,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1341674521}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 519e8515dd6004ff7bc54d30d0013275, type: 2}
+  m_Material: {fileID: 6200000, guid: ebee67dc1412e4a45a54dad7ccd794fa, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1131,7 +1131,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c64a799a2217a47aaaf943937f160d1b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.29679218, b: 0.9245283, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1598,10 +1598,10 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 0.8
   m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_GravityScale: 1
+  m_Material: {fileID: 6200000, guid: 519e8515dd6004ff7bc54d30d0013275, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -1677,7 +1677,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1865640879}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 519e8515dd6004ff7bc54d30d0013275, type: 2}
+  m_Material: {fileID: 6200000, guid: ebee67dc1412e4a45a54dad7ccd794fa, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1735,7 +1735,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c64a799a2217a47aaaf943937f160d1b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.29679218, b: 0.9245283, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
