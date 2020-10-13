@@ -148,7 +148,7 @@ public class MoveMouse : MonoBehaviour
     }
 
 
-    //Warp object
+    //Interact with other objects
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Warp"))
