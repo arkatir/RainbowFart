@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MoveMouse : MonoBehaviour
 {
     private float theta;
-    [SerializeField] float speed;
+    [SerializeField] float speed = 0;
     [SerializeField] float radius;
     private bool moving = false;
     private bool loading = false;
@@ -15,11 +16,16 @@ public class MoveMouse : MonoBehaviour
     private Vector3 pos;
     private Vector3 direction;
     private float orientation = -1;
+    private Rigidbody2D rb;
+    private bool rigid = false;
+    private float bounce;
 
     // Start is called before the first frame update
     void Start()
     {
         c = Camera.main;
+        rb = GetComponent<Rigidbody2D>();
+        bounce = rb.sharedMaterial.bounciness;
     }
 
     // Update is called once per frame
@@ -45,25 +51,12 @@ public class MoveMouse : MonoBehaviour
         {
             radius += Time.deltaTime;
             center = (Vector2)transform.position + radius * (Vector2)direction.normalized;
-            /*Debug.Log("pos = " + transform.position);
-            Debug.Log("direction = " + direction);
-            Debug.Log("directionN = " + direction.normalized);
-            Debug.Log("center = " + center);*/
             trajectory.transform.position = center;
             trajectory.transform.localScale = 2 * radius * Vector3.one;
         }
 
         if (Input.GetMouseButtonUp(0) && !moving && loading)
         {
-            /*if (orientation == 1)
-            {
-                theta = 0;
-            }
-            else
-            {
-                theta = Mathf.PI;
-            }*/
-
             theta = Vector2.SignedAngle(new Vector2(1, 0), -direction) / 180 * Mathf.PI;
             moving = true;
             trajectory.transform.position = center;
@@ -76,10 +69,29 @@ public class MoveMouse : MonoBehaviour
             theta += Time.deltaTime * speed / radius * orientation;
             transform.position = center + radius * new Vector2(Mathf.Cos(theta), Mathf.Sin(theta));
         }
+
+        /*if (rigid)
+        {
+            rb.gravityScale = 1f;
+        }*/
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        moving = false;
+        if (moving)
+        {
+            Vector2 normal = collision.GetContact(0).normal.normalized;
+            Vector2 oldVel = speed * radius * orientation * new Vector2(-Mathf.Sin(theta), Mathf.Cos(theta));
+            Vector2 newVel = (oldVel - 2 * Vector2.Dot(oldVel, normal) * normal) * collision.collider.bounciness;
+            moving = false;
+            rigid = true;
+            rb.velocity = newVel;
+        }
+        
     }
 }

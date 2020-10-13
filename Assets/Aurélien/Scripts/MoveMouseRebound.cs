@@ -6,7 +6,7 @@ using UnityEngine;
 public class MoveMouseRebound : MonoBehaviour
 {
     private float theta;
-    [SerializeField] float speed;
+    [SerializeField] float speed = 0;
     [SerializeField] float radius;
     private bool moving = false;
     private bool loading = false;
@@ -16,11 +16,13 @@ public class MoveMouseRebound : MonoBehaviour
     private Vector3 pos;
     private Vector3 direction;
     private float orientation = -1;
+    private Rigidbody2D rb;
 
     // Start is called before the first frame update
     void Start()
     {
         c = Camera.main;
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame

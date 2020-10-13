@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MoveAngle2d: MonoBehaviour
 {   
     private Rigidbody2D rib;
     private float theta2D;
-    [SerializeField] float speed2D;
+    [SerializeField] float speed2D = 0;
     [SerializeField] float radius2D;
     private bool moving2D = false;
     private bool loading2D = false;
@@ -63,6 +64,5 @@ public class MoveAngle2d: MonoBehaviour
     {
         moving2D = false;
         rigid = true;
-
     }
 }

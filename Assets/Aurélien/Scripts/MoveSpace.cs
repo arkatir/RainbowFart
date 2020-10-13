@@ -5,7 +5,7 @@ using UnityEngine;
 public class MoveSpace : MonoBehaviour
 {
     private float theta;
-    [SerializeField] float speed;
+    [SerializeField] float speed = 0;
     [SerializeField] float radius;
     private bool moving = false;
     private bool loading = false;
