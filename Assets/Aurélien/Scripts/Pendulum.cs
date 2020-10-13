@@ -18,7 +18,6 @@ public class Pendulum : MonoBehaviour
         theta = theta0;
         t = 0;
         speed = 9.8f / length;
-        Debug.Log("length");
     }
 
     // Update is called once per frame

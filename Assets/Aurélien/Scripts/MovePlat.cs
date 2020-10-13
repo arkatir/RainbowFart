@@ -5,7 +5,7 @@ using UnityEngine;
 public class MovePlat : MonoBehaviour
 {
     private Vector2 startPos;
-    [SerializeField] Vector2 endPos;
+    [SerializeField] Vector2 endPos = new Vector2(0,0);
     private float t;
     [SerializeField] float speed = 0.5f;
     private float dist;
