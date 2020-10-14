@@ -207,8 +207,11 @@ public class MoveMouse : MonoBehaviour
         {
             string starName = collision.gameObject.name;
             PlayerPrefs.SetInt(starName, 1);
-            Debug.Log(starName);
-            Debug.Log(PlayerPrefs.GetInt(starName));
+            collision.gameObject.SetActive(false);
+        }
+
+        if (collision.gameObject.CompareTag("End"))
+        {
             gameManager.Victory();
         }
 
