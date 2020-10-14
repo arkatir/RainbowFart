@@ -165,6 +165,10 @@ public class MoveMouse : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Star"))
         {
+            string starName = collision.gameObject.name;
+            PlayerPrefs.SetInt(starName, 1);
+            Debug.Log(starName);
+            Debug.Log(PlayerPrefs.GetInt(starName));
             gameManager.Victory();
         }
 

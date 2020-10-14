@@ -3043,7 +3043,7 @@ GameObject:
   - component: {fileID: 1983580068}
   - component: {fileID: 1983580070}
   m_Layer: 0
-  m_Name: Star
+  m_Name: Star11
   m_TagString: Star
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
