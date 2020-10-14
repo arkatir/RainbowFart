@@ -13,6 +13,10 @@ public class GameManager : MonoBehaviour
     public bool timeMove = false;
     public float jumpCounter = 0;
 
+    //Audio parameters
+    [SerializeField] private AudioSource victory_s;
+    [SerializeField] private AudioSource restart_s;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,12 +43,15 @@ public class GameManager : MonoBehaviour
 
     public void Victory()
     {
+        victory_s.Play();
+        
         victoryText.gameObject.SetActive(true);
         gameOver = true;
     }
 
     private void Restart()
     {
+        restart_s.Play();
         gameOverText.gameObject.SetActive(false);
         victoryText.gameObject.SetActive(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
