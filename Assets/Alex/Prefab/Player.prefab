@@ -947,7 +947,7 @@ Transform:
   - {fileID: 2265444822551324774}
   - {fileID: 2265444823697987248}
   - {fileID: 2265444823644843183}
-  - {fileID: 8002595238780057383}
+  - {fileID: 8231474047895078172}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1057,7 +1057,7 @@ MonoBehaviour:
   radiusMin: 1
   radiusMax: 5
   loadSpeed: 1
-  trajectory: {fileID: 5718128188617141548}
+  trajectory: {fileID: 8552800360757290138}
   power: {fileID: 2265444823697987249}
   Idle: {fileID: 2265444822551324769}
   Charging: {fileID: 2265444821946494668}
@@ -1782,7 +1782,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2265444823697987248
 Transform:
   m_ObjectHideFlags: 0
@@ -1840,7 +1840,7 @@ GameObject:
   - component: {fileID: 4687846940569506740}
   - component: {fileID: 2230776743258410454}
   m_Layer: 0
-  m_Name: Trajectory
+  m_Name: TrajectorySprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1853,12 +1853,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5718128188617141548}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.22, y: 0.262, z: 0}
+  m_LocalScale: {x: 0.065, y: 0.065, z: 0.1}
   m_Children: []
-  m_Father: {fileID: 2265444823154981526}
-  m_RootOrder: 4
+  m_Father: {fileID: 8231474047895078172}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4687846940569506740
 SpriteRenderer:
@@ -1900,12 +1900,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9810fb64f481f1a469d982c2fae081b5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7763d3f5e5742d74e8a13e81303a65e1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 9.51, y: 8.71}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1922,3 +1922,34 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
+--- !u!1 &8552800360757290138
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8231474047895078172}
+  m_Layer: 0
+  m_Name: Trajectory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8231474047895078172
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8552800360757290138}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8002595238780057383}
+  m_Father: {fileID: 2265444823154981526}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
