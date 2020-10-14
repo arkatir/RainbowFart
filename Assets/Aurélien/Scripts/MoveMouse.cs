@@ -134,6 +134,7 @@ public class MoveMouse : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F) && !moving)
             {
                 orientation = -orientation;
+                transform.localScale = new Vector3(transform.localScale.x, -transform.localScale.y, transform.localScale.z);
             }
 
             //Death by falling
