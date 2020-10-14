@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     public Image prefMenu;
     public bool timeMove = false;
     public float jumpCounter = 0;
+    public int levelNumber;
+    public Image[] stars;
 
     //Audio parameters
     [SerializeField] private AudioSource victory_s;
@@ -21,7 +23,14 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        for (int i = 0; i < 3; i++)
+        {
+            string starName = "Star" + levelNumber + (i+1);
+            if(PlayerPrefs.GetInt(starName) == 1)
+            {
+                DisplayStar(i);
+            }
+        }
     }
 
     // Update is called once per frame
@@ -68,5 +77,16 @@ public class GameManager : MonoBehaviour
     public void Resume()
     {
         prefMenu.gameObject.SetActive(false);
+    }
+
+    public void DisplayStar(int i)
+    {
+        stars[i].gameObject.SetActive(true);
+        stars[i + 3].gameObject.SetActive(false);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }
