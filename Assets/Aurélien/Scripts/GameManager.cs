@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
         gameOver = true;
     }
 
-    private void Restart()
+    public void Restart()
     {
         restart_s.PlayOneShot(restart_s.clip, 1.0F);
         gameOverText.gameObject.SetActive(false);
@@ -62,11 +62,11 @@ public class GameManager : MonoBehaviour
 
     public void DisplayPreferences()
     {
-        /*if (prefMenu == null)
-        {
-            Debug.LogError("prefMenu has not been assigned.", this);
-        }*/
         prefMenu.gameObject.SetActive(true);
-        //Debug.Log("wtf");
+    }
+
+    public void Resume()
+    {
+        prefMenu.gameObject.SetActive(false);
     }
 }
