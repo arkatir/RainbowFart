@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
 
     private void Restart()
     {
-        restart_s.Play();
+        restart_s.PlayOneShot(restart_s.clip, 1.0F);
         gameOverText.gameObject.SetActive(false);
         victoryText.gameObject.SetActive(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

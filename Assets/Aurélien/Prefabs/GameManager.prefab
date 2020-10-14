@@ -52,7 +52,7 @@ MonoBehaviour:
   timeMove: 0
   jumpCounter: 0
   victory_s: {fileID: 4076853142608082450}
-  restart_s: {fileID: 0}
+  restart_s: {fileID: 6010504492723397492}
 --- !u!82 &4076853142608082450
 AudioSource:
   m_ObjectHideFlags: 0
