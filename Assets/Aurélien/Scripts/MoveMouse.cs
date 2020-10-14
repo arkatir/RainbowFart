@@ -182,7 +182,7 @@ public class MoveMouse : MonoBehaviour
     //Free fall after collision
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (moving)
+        /*if (moving)
         {
             rainbow_s.Stop();
             landing_s.Play();
@@ -198,11 +198,29 @@ public class MoveMouse : MonoBehaviour
             
             moving = false;
             freeFall = true;
-        }
+        }*/
     }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
+        if (moving)
+        {
+            rainbow_s.Stop();
+            landing_s.Play();
+
+            Idle.SetActive(false);
+            Boule.SetActive(true);
+
+            //Recreate first bounce
+            Vector2 normal = collision.GetContact(0).normal.normalized;
+            Vector2 oldVel = speed * orientation * new Vector2(-Mathf.Sin(theta), Mathf.Cos(theta));
+            Vector2 newVel = (oldVel - 2 * Vector2.Dot(oldVel, normal) * normal) * collision.collider.bounciness;
+            rb.velocity = newVel;
+
+            moving = false;
+            freeFall = true;
+        }
+
         if (freeFall && (rb.velocity.magnitude < speedEps))
         {
             Idle.SetActive(false);
