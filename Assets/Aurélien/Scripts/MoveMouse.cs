@@ -196,8 +196,6 @@ public class MoveMouse : MonoBehaviour
             
             moving = false;
             freeFall = true;
-
-            
         }
     }
 
