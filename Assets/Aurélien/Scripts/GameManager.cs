@@ -9,7 +9,9 @@ public class GameManager : MonoBehaviour
     public bool gameOver = false;
     public Text gameOverText;
     public Text victoryText;
+    public Text jumpText;
     public bool timeMove = false;
+    public float jumpCounter = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +27,8 @@ public class GameManager : MonoBehaviour
         {
             Restart();
         }
+
+        jumpText.text = "Sauts : " + jumpCounter;
     }
 
     public void GameOver()

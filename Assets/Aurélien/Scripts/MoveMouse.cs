@@ -39,9 +39,12 @@ public class MoveMouse : MonoBehaviour
     public GameObject trajectory;
     public GameObject power;
     private GameObject powerArrow;
+
+    //Animations
     public GameObject Idle;
     public GameObject Charging;
     public GameObject Boule;
+
     void Start()
     {
         //Initialize private parameters
@@ -49,6 +52,8 @@ public class MoveMouse : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         powerArrow = power.transform.GetChild(0).gameObject;
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+
+        //Initialize animation
         Idle.SetActive(true);
         Charging.SetActive(false);
         Boule.SetActive(false);
@@ -117,6 +122,7 @@ public class MoveMouse : MonoBehaviour
                 moving = true;
                 loading = false;
                 gameManager.timeMove = true;
+                gameManager.jumpCounter += 1;
             }
 
             //Circle movement
