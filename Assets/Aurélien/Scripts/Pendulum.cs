@@ -9,6 +9,7 @@ public class Pendulum : MonoBehaviour
     private float t;
     private float theta;
     private float speed;
+    private GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
@@ -18,13 +19,18 @@ public class Pendulum : MonoBehaviour
         theta = theta0;
         t = 0;
         speed = 9.8f / length;
+
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        t += Time.deltaTime * speed;
-        theta = theta0 * Mathf.Sin(t);
+        if (gameManager.timeMove)
+        {
+            t += Time.deltaTime * speed;
+        }
+        theta = theta0 * Mathf.Cos(t);
         transform.rotation = Quaternion.AngleAxis(theta, Vector3.forward);
     }
 }
