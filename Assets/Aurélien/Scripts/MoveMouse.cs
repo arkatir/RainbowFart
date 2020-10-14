@@ -40,16 +40,9 @@ public class MoveMouse : MonoBehaviour
     public GameObject power;
     private GameObject powerArrow;
 
-    //Animation Variable
-    public GameObject Idle;
-    public GameObject Charging;
-    public GameObject Boule;
 
     void Start()
     {
-        Idle.SetActive(true);
-        Boule.SetActive(false);
-
         //Initialize private parameters
         c = Camera.main;
         rb = GetComponent<Rigidbody2D>();
@@ -61,15 +54,9 @@ public class MoveMouse : MonoBehaviour
     {
         if (!gameManager.gameOver)
         {
-            Idle.SetActive(true);
-            
             //Initialization of the loading phase
             if (Input.GetMouseButtonDown(0) && !moving && !loading && !freeFall)
             {
-                Idle.SetActive(false);
-                Charging.SetActive(true);
-                
-
                 radius = radiusMin;
                 loading = true;
                 pos = c.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -c.transform.position.z));
@@ -80,11 +67,8 @@ public class MoveMouse : MonoBehaviour
             //Loading phase
             if (Input.GetMouseButton(0) && loading && !moving)
             {
-                Idle.SetActive(false);
-                Charging.SetActive(true);
-
                 //Update radius
-                if (radius > radiusMax)
+                if(radius > radiusMax)
                 {
                     loadDir = -1;
                 }
@@ -112,10 +96,6 @@ public class MoveMouse : MonoBehaviour
             //Initialize circle movement
             if (Input.GetMouseButtonUp(0) && !moving && loading)
             {
-                Idle.SetActive(false);
-                Charging.SetActive(false);
-                Boule.SetActive(true);
-
                 theta = Vector2.SignedAngle(new Vector2(1, 0), direction) / 180 * Mathf.PI - orientation * Mathf.PI / 2;
                 moving = true;
                 loading = false;
@@ -124,10 +104,6 @@ public class MoveMouse : MonoBehaviour
             //Circle movement
             if (moving)
             {
-                Idle.SetActive(false);
-                Charging.SetActive(false);
-                Boule.SetActive(true);
-
                 theta += Time.deltaTime * speed / radius * orientation;
                 transform.position = center + radius * new Vector2(Mathf.Cos(theta), Mathf.Sin(theta));
             }
@@ -151,7 +127,6 @@ public class MoveMouse : MonoBehaviour
     {
         if (moving)
         {
-            Idle.SetActive(false);
             //Recreate first bounce
             Vector2 normal = collision.GetContact(0).normal.normalized;
             Vector2 oldVel = speed * orientation * new Vector2(-Mathf.Sin(theta), Mathf.Cos(theta));
@@ -167,7 +142,6 @@ public class MoveMouse : MonoBehaviour
     {
         if (freeFall && (rb.velocity.magnitude < speedEps))
         {
-            Idle.SetActive(false);
             rb.velocity = Vector2.zero;
             freeFall = false;
         }
@@ -181,7 +155,6 @@ public class MoveMouse : MonoBehaviour
         {
             if (moving)
             {
-                Idle.SetActive(false);
                 Vector2 pivot = transform.position;
                 center = Rotate90(center, pivot, orientation);
                 orientation = -orientation;
@@ -192,6 +165,10 @@ public class MoveMouse : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Star"))
         {
+            string starName = collision.gameObject.name;
+            PlayerPrefs.SetInt(starName, 1);
+            Debug.Log(starName);
+            Debug.Log(PlayerPrefs.GetInt(starName));
             gameManager.Victory();
         }
 
