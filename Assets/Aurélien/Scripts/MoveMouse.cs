@@ -156,7 +156,7 @@ public class MoveMouse : MonoBehaviour
             }
 
             //Flip character orientation
-            if (Input.GetKeyDown(KeyCode.F) && !moving)
+            if ((Input.GetKeyDown(KeyCode.F) || Input.GetMouseButtonUp(1)) && !moving)
             {
                 flip_s.Play();
 
