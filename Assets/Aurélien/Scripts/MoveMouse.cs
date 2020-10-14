@@ -26,8 +26,7 @@ public class MoveMouse : MonoBehaviour
     [SerializeField] private AudioSource landing_s;
     [SerializeField] private AudioSource warp_s;
     [SerializeField] private AudioSource flip_s;
-    //[SerializeField] private AudioSource victory_s;
-    //[SerializeField] private AudioSource death_s;
+    [SerializeField] private AudioSource death_s;
 
     //Mouse position variables
     private Camera c;
@@ -171,7 +170,8 @@ public class MoveMouse : MonoBehaviour
             //Death by falling
             if(transform.position.y < minY)
             {
-                //death_s.Play();
+                rainbow_s.Stop(); 
+                death_s.Play();
 
                 gameManager.GameOver();
             }
@@ -183,7 +183,8 @@ public class MoveMouse : MonoBehaviour
     {
         if (moving)
         {
-            rainbow_s.Stop(); 
+            rainbow_s.Stop();
+            landing_s.Play();
             
             Idle.SetActive(false);
             Boule.SetActive(true);
@@ -203,8 +204,6 @@ public class MoveMouse : MonoBehaviour
     {
         if (freeFall && (rb.velocity.magnitude < speedEps))
         {
-            rainbow_s.Stop(); 
-            
             Idle.SetActive(false);
             Boule.SetActive(true);
 
@@ -257,7 +256,7 @@ public class MoveMouse : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             rainbow_s.Stop(); 
-            //death_s.Play();
+            death_s.Play();
 
             gameManager.GameOver();
         }
