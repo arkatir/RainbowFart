@@ -49,6 +49,7 @@ MonoBehaviour:
   gameOverText: {fileID: 0}
   victoryText: {fileID: 0}
   jumpText: {fileID: 0}
+  prefMenu: {fileID: 0}
   timeMove: 0
   jumpCounter: 0
   victory_s: {fileID: 4076853142608082450}

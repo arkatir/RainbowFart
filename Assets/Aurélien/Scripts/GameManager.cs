@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public Text gameOverText;
     public Text victoryText;
     public Text jumpText;
+    public Image prefMenu;
     public bool timeMove = false;
     public float jumpCounter = 0;
 
@@ -57,5 +58,15 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         //SceneManager.LoadScene("LevelSelect");
         gameOver = false;
+    }
+
+    public void DisplayPreferences()
+    {
+        /*if (prefMenu == null)
+        {
+            Debug.LogError("prefMenu has not been assigned.", this);
+        }*/
+        prefMenu.gameObject.SetActive(true);
+        //Debug.Log("wtf");
     }
 }
