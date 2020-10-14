@@ -127,8 +127,9 @@ public class MoveMouse : MonoBehaviour
             //Initialize circle movement
             if (Input.GetMouseButtonUp(0) && !moving && loading)
             {
+                rainbow_s.Play(); 
                 jumping_s.Play();
-                rainbow_s.Play();
+                
 
                 Idle.SetActive(false);
                 Charging.SetActive(false);

@@ -771,8 +771,8 @@ MonoBehaviour:
   - {fileID: 2265444823068296396}
   - {fileID: 2265444823592902944}
   m_Bounds:
-    m_Center: {x: -0.71997, y: -0.010127068, z: 0}
-    m_Extent: {x: 3.08517, y: 5.0751724, z: 0}
+    m_Center: {x: -0.7199693, y: -0.010128021, z: 0}
+    m_Extent: {x: 3.0851693, y: 5.0751724, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!114 &2265444822551324773
@@ -1069,8 +1069,6 @@ MonoBehaviour:
   landing_s: {fileID: 4800376219416048871}
   warp_s: {fileID: 5774761090277635301}
   flip_s: {fileID: 2507024603423874225}
-  victory_s: {fileID: 0}
-  death_s: {fileID: 0}
   trajectory: {fileID: 5718128188617141548}
   power: {fileID: 2265444823697987249}
   Idle: {fileID: 2265444822551324769}
@@ -1201,7 +1199,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2b9c5c50d7d33f34c8baad4efe29bbd1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: fcabb3576b6e6dd41a4536d75faf39a1, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.4
   m_Pitch: 1.1
@@ -1209,7 +1207,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
