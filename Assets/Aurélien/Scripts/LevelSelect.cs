@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelSelect : MonoBehaviour
 {
     [SerializeField] int numberLevels = 1;
     [SerializeField] int numberStars = 3;
+    public Image back;
 
     // Start is called before the first frame update
     void Start()
@@ -23,9 +25,10 @@ public class LevelSelect : MonoBehaviour
                     star.SetActive(true);
                     starGrey.SetActive(false);
                 }
-            }
-                
+            }  
         }
+
+        back.GetComponent<Button>().onClick.AddListener(Quit);
     }
 
     // Update is called once per frame
@@ -37,5 +40,10 @@ public class LevelSelect : MonoBehaviour
     public void LoadLevel(int level)
     {
         SceneManager.LoadScene("Level " + level);
+    }
+
+    public void Quit()
+    {
+        SceneManager.LoadScene("TitleScene");
     }
 }
