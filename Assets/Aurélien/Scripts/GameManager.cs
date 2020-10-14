@@ -47,8 +47,8 @@ public class GameManager : MonoBehaviour
     {
         gameOverText.gameObject.SetActive(false);
         victoryText.gameObject.SetActive(false);
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        SceneManager.LoadScene("LevelSelect");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //SceneManager.LoadScene("LevelSelect");
         gameOver = false;
     }
 }
