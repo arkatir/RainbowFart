@@ -17,9 +17,11 @@ public class LevelSelect : MonoBehaviour
             for (int j = 0; j < numberStars; j++)
             {
                 GameObject star = level.transform.GetChild(j).gameObject;
+                GameObject starGrey = level.transform.GetChild(j + numberStars).gameObject;
                 if (PlayerPrefs.GetInt("Star" + (i+1) + (j+1)) == 1)
                 {
                     star.SetActive(true);
+                    starGrey.SetActive(false);
                 }
             }
                 
