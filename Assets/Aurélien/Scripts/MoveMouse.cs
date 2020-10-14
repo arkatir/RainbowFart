@@ -39,9 +39,12 @@ public class MoveMouse : MonoBehaviour
     public GameObject trajectory;
     public GameObject power;
     private GameObject powerArrow;
+
+    //Animations
     public GameObject Idle;
     public GameObject Charging;
     public GameObject Boule;
+
     void Start()
     {
         //Initialize private parameters
@@ -49,6 +52,8 @@ public class MoveMouse : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         powerArrow = power.transform.GetChild(0).gameObject;
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+
+        //Initialize animation
         Idle.SetActive(true);
         Charging.SetActive(false);
         Boule.SetActive(false);
@@ -116,6 +121,8 @@ public class MoveMouse : MonoBehaviour
                 theta = Vector2.SignedAngle(new Vector2(1, 0), direction) / 180 * Mathf.PI - orientation * Mathf.PI / 2;
                 moving = true;
                 loading = false;
+                gameManager.timeMove = true;
+                gameManager.jumpCounter += 1;
             }
 
             //Circle movement
@@ -134,6 +141,7 @@ public class MoveMouse : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F) && !moving)
             {
                 orientation = -orientation;
+                transform.localScale = new Vector3(transform.localScale.x, -transform.localScale.y, transform.localScale.z);
             }
 
             //Death by falling
@@ -151,6 +159,7 @@ public class MoveMouse : MonoBehaviour
         {
             Idle.SetActive(false);
             Boule.SetActive(true);
+
             //Recreate first bounce
             Vector2 normal = collision.GetContact(0).normal.normalized;
             Vector2 oldVel = speed * orientation * new Vector2(-Mathf.Sin(theta), Mathf.Cos(theta));
@@ -171,6 +180,7 @@ public class MoveMouse : MonoBehaviour
 
             rb.velocity = Vector2.zero;
             freeFall = false;
+            gameManager.timeMove = false;
         }
     }
 
@@ -197,8 +207,11 @@ public class MoveMouse : MonoBehaviour
         {
             string starName = collision.gameObject.name;
             PlayerPrefs.SetInt(starName, 1);
-            Debug.Log(starName);
-            Debug.Log(PlayerPrefs.GetInt(starName));
+            collision.gameObject.SetActive(false);
+        }
+
+        if (collision.gameObject.CompareTag("End"))
+        {
             gameManager.Victory();
         }
 

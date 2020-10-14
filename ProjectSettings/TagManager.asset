@@ -8,6 +8,7 @@ TagManager:
   - Star
   - Enemy
   - Audio
+  - End
   layers:
   - Default
   - TransparentFX

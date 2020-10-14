@@ -10,6 +10,7 @@ public class MovePlat : MonoBehaviour
     [SerializeField] float speed = 0.5f;
     private float dist;
     private float moveDir = 1;
+    private GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,8 @@ public class MovePlat : MonoBehaviour
         startPos = transform.position;
         dist = (endPos - startPos).magnitude;
         t = 0;
+
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -32,7 +35,10 @@ public class MovePlat : MonoBehaviour
             moveDir = 1;
         }
 
-        t += moveDir * speed * Time.deltaTime / dist;
+        if (gameManager.timeMove)
+        {
+            t += moveDir * speed * Time.deltaTime / dist;
+        }
         transform.position = endPos * t + startPos * (1 - t);
     }
 }
