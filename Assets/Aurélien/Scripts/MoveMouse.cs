@@ -83,6 +83,8 @@ public class MoveMouse : MonoBehaviour
                 Idle.SetActive(false);
                 Charging.SetActive(true);
 
+                trajectory.SetActive(true);
+
                 radius = radiusMin;
                 loading = true;
                 pos = c.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -c.transform.position.z));
@@ -132,6 +134,8 @@ public class MoveMouse : MonoBehaviour
                 Charging.SetActive(false);
                 Boule.SetActive(true);
 
+                trajectory.SetActive(false);
+
                 theta = Vector2.SignedAngle(new Vector2(1, 0), direction) / 180 * Mathf.PI - orientation * Mathf.PI / 2;
                 moving = true;
                 loading = false;
@@ -157,7 +161,10 @@ public class MoveMouse : MonoBehaviour
                 flip_s.Play();
 
                 orientation = -orientation;
-                transform.localScale = new Vector3(transform.localScale.x, -transform.localScale.y, transform.localScale.z);
+                Idle.transform.localScale = new Vector3(-Idle.transform.localScale.x, Idle.transform.localScale.y, Idle.transform.localScale.z);
+                Boule.transform.localScale = new Vector3(-Boule.transform.localScale.x, Boule.transform.localScale.y, Boule.transform.localScale.z);
+                Charging.transform.localScale = new Vector3(-Charging.transform.localScale.x, Charging.transform.localScale.y, Charging.transform.localScale.z);
+                //trajectory.transform.localScale = new Vector3(-trajectory.transform.localScale.x, trajectory.transform.localScale.y, trajectory.transform.localScale.z);
             }
 
             //Death by falling
@@ -267,6 +274,7 @@ public class MoveMouse : MonoBehaviour
     private void UpdateTrajectory()
     {
         trajectory.transform.position = center;
-        trajectory.transform.localScale = radius * Vector3.one;
+        trajectory.transform.localScale = radius * new Vector3(-orientation, 1, 1);
+        trajectory.transform.rotation = Quaternion.AngleAxis(Vector2.SignedAngle(new Vector2(0, 1), direction), Vector3.forward);
     }
 }
