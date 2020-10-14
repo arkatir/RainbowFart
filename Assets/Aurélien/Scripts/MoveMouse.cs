@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 //using System.Media;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class MoveMouse : MonoBehaviour
 {
@@ -77,7 +78,7 @@ public class MoveMouse : MonoBehaviour
             Boule.SetActive(false);
 
             //Initialization of the loading phase
-            if (Input.GetMouseButtonDown(0) && !moving && !loading && !freeFall)
+            if (Input.GetMouseButtonDown(0) && !moving && !loading && !freeFall && EventSystem.current.currentSelectedGameObject == null)
             {
                 Idle.SetActive(false);
                 Charging.SetActive(true);
@@ -156,7 +157,7 @@ public class MoveMouse : MonoBehaviour
             }
 
             //Flip character orientation
-            if (Input.GetKeyDown(KeyCode.F) && !moving)
+            if ((Input.GetKeyDown(KeyCode.F) || Input.GetMouseButtonUp(1)) && !moving)
             {
                 flip_s.Play();
 
