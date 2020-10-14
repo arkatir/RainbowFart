@@ -116,6 +116,7 @@ public class MoveMouse : MonoBehaviour
                 theta = Vector2.SignedAngle(new Vector2(1, 0), direction) / 180 * Mathf.PI - orientation * Mathf.PI / 2;
                 moving = true;
                 loading = false;
+                gameManager.timeMove = true;
             }
 
             //Circle movement
@@ -152,6 +153,7 @@ public class MoveMouse : MonoBehaviour
         {
             Idle.SetActive(false);
             Boule.SetActive(true);
+
             //Recreate first bounce
             Vector2 normal = collision.GetContact(0).normal.normalized;
             Vector2 oldVel = speed * orientation * new Vector2(-Mathf.Sin(theta), Mathf.Cos(theta));
@@ -172,6 +174,7 @@ public class MoveMouse : MonoBehaviour
 
             rb.velocity = Vector2.zero;
             freeFall = false;
+            gameManager.timeMove = false;
         }
     }
 

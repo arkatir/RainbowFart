@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public bool gameOver = false;
     public Text gameOverText;
     public Text victoryText;
+    public bool timeMove = false;
 
     // Start is called before the first frame update
     void Start()
