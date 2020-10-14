@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+//using System.Media;
 using UnityEngine;
 
 public class MoveMouse : MonoBehaviour
@@ -17,6 +18,16 @@ public class MoveMouse : MonoBehaviour
     [SerializeField] float radiusMax = 5.0f;
     [SerializeField] float loadSpeed = 1.0f;
     private float loadDir = 1;
+
+    //Audio parameters
+    [SerializeField] private AudioSource star_s;
+    [SerializeField] private AudioSource jumping_s;
+    [SerializeField] private AudioSource rainbow_s;
+    [SerializeField] private AudioSource landing_s;
+    [SerializeField] private AudioSource warp_s;
+    [SerializeField] private AudioSource flip_s;
+    //[SerializeField] private AudioSource victory_s;
+    //[SerializeField] private AudioSource death_s;
 
     //Mouse position variables
     private Camera c;
@@ -114,6 +125,9 @@ public class MoveMouse : MonoBehaviour
             //Initialize circle movement
             if (Input.GetMouseButtonUp(0) && !moving && loading)
             {
+                jumping_s.Play();
+                rainbow_s.Play();
+
                 Idle.SetActive(false);
                 Charging.SetActive(false);
                 Boule.SetActive(true);
@@ -140,6 +154,8 @@ public class MoveMouse : MonoBehaviour
             //Flip character orientation
             if (Input.GetKeyDown(KeyCode.F) && !moving)
             {
+                flip_s.Play();
+
                 orientation = -orientation;
                 transform.localScale = new Vector3(transform.localScale.x, -transform.localScale.y, transform.localScale.z);
             }
@@ -147,6 +163,8 @@ public class MoveMouse : MonoBehaviour
             //Death by falling
             if(transform.position.y < minY)
             {
+                //death_s.Play();
+
                 gameManager.GameOver();
             }
         }
@@ -157,6 +175,8 @@ public class MoveMouse : MonoBehaviour
     {
         if (moving)
         {
+            rainbow_s.Stop(); 
+            
             Idle.SetActive(false);
             Boule.SetActive(true);
 
@@ -165,9 +185,11 @@ public class MoveMouse : MonoBehaviour
             Vector2 oldVel = speed * orientation * new Vector2(-Mathf.Sin(theta), Mathf.Cos(theta));
             Vector2 newVel = (oldVel - 2 * Vector2.Dot(oldVel, normal) * normal) * collision.collider.bounciness;
             rb.velocity = newVel;
-
+            
             moving = false;
             freeFall = true;
+
+            
         }
     }
 
@@ -175,12 +197,16 @@ public class MoveMouse : MonoBehaviour
     {
         if (freeFall && (rb.velocity.magnitude < speedEps))
         {
+            rainbow_s.Stop(); 
+            
             Idle.SetActive(false);
             Boule.SetActive(true);
 
+            
             rb.velocity = Vector2.zero;
             freeFall = false;
             gameManager.timeMove = false;
+
         }
     }
 
@@ -192,6 +218,8 @@ public class MoveMouse : MonoBehaviour
         {
             if (moving)
             {
+                warp_s.Play();
+
                 Idle.SetActive(false);
                 Boule.SetActive(true);
 
@@ -205,6 +233,8 @@ public class MoveMouse : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Star"))
         {
+            star_s.Play();
+
             string starName = collision.gameObject.name;
             PlayerPrefs.SetInt(starName, 1);
             collision.gameObject.SetActive(false);
@@ -212,11 +242,17 @@ public class MoveMouse : MonoBehaviour
 
         if (collision.gameObject.CompareTag("End"))
         {
+            rainbow_s.Stop(); 
+            //victory_s.Play();
+
             gameManager.Victory();
         }
 
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            rainbow_s.Stop(); 
+            //death_s.Play();
+
             gameManager.GameOver();
         }
     }
