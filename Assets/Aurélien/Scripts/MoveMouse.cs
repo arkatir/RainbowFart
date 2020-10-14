@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 //using System.Media;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class MoveMouse : MonoBehaviour
 {
@@ -77,7 +78,7 @@ public class MoveMouse : MonoBehaviour
             Boule.SetActive(false);
 
             //Initialization of the loading phase
-            if (Input.GetMouseButtonDown(0) && !moving && !loading && !freeFall)
+            if (Input.GetMouseButtonDown(0) && !moving && !loading && !freeFall && EventSystem.current.currentSelectedGameObject == null)
             {
                 Idle.SetActive(false);
                 Charging.SetActive(true);
