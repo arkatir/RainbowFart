@@ -1,0 +1,1498 @@
+fileFormatVersion: 2
+guid: dae03f6c8b2529543a49f1a0bb733b83
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8056269757015164320
+    second: Untitled_Artwork (2)_0
+  - first:
+      213: 657810923222281855
+    second: Untitled_Artwork (2)_1
+  - first:
+      213: -5212105263687333457
+    second: Untitled_Artwork (2)_2
+  - first:
+      213: -3423964349622760944
+    second: Untitled_Artwork (2)_3
+  - first:
+      213: 4979735122701714205
+    second: Untitled_Artwork (2)_4
+  - first:
+      213: 7269207115611647049
+    second: Untitled_Artwork (2)_5
+  - first:
+      213: 407017682863149902
+    second: Untitled_Artwork (2)_6
+  - first:
+      213: -1686119103783220506
+    second: Untitled_Artwork (2)_7
+  - first:
+      213: -7343853662596881662
+    second: Untitled_Artwork (2)_8
+  - first:
+      213: -2088789871790444860
+    second: Untitled_Artwork (2)_9
+  - first:
+      213: -7284751396791881592
+    second: Untitled_Artwork (2)_10
+  - first:
+      213: 1144939911625744944
+    second: Untitled_Artwork (2)_11
+  - first:
+      213: 8665046131231991611
+    second: Untitled_Artwork (2)_12
+  - first:
+      213: 8470715054692563577
+    second: Untitled_Artwork (2)_13
+  - first:
+      213: -8605652565868802930
+    second: Untitled_Artwork (2)_14
+  - first:
+      213: 5680253486894885360
+    second: Untitled_Artwork (2)_15
+  - first:
+      213: 819078300777385773
+    second: Untitled_Artwork (2)_16
+  - first:
+      213: -3669576095249451583
+    second: Untitled_Artwork (2)_17
+  - first:
+      213: -4661583753295569391
+    second: Untitled_Artwork (2)_18
+  - first:
+      213: -2766436470238019471
+    second: Untitled_Artwork (2)_19
+  - first:
+      213: 7300023560957564444
+    second: Untitled_Artwork (2)_20
+  - first:
+      213: 1187840912889385432
+    second: Untitled_Artwork (2)_21
+  - first:
+      213: -3603385441485936999
+    second: Untitled_Artwork (2)_22
+  - first:
+      213: -3179195640716682287
+    second: Untitled_Artwork (2)_23
+  - first:
+      213: 1288877041781916036
+    second: Untitled_Artwork (2)_24
+  - first:
+      213: 567802129496854515
+    second: Untitled_Artwork (2)_25
+  - first:
+      213: -9122958965813142819
+    second: Untitled_Artwork (2)_26
+  - first:
+      213: -6331345603749046381
+    second: Untitled_Artwork (2)_27
+  - first:
+      213: 1978995243964747598
+    second: Untitled_Artwork (2)_28
+  - first:
+      213: 5991547712497929141
+    second: Untitled_Artwork (2)_29
+  - first:
+      213: 3744842232163268651
+    second: Untitled_Artwork (2)_30
+  - first:
+      213: -3463944929896834460
+    second: Untitled_Artwork (2)_31
+  - first:
+      213: -7840155165003012269
+    second: Untitled_Artwork (2)_32
+  - first:
+      213: -3194686698682961281
+    second: Untitled_Artwork (2)_33
+  - first:
+      213: 6710327198404013200
+    second: Untitled_Artwork (2)_34
+  - first:
+      213: -4831033797910843179
+    second: Untitled_Artwork (2)_35
+  - first:
+      213: -1818290323827427097
+    second: Untitled_Artwork (2)_36
+  - first:
+      213: -7221336554561857430
+    second: Untitled_Artwork (2)_37
+  - first:
+      213: 9148339806336227743
+    second: Untitled_Artwork (2)_38
+  - first:
+      213: -3081525712916281335
+    second: Untitled_Artwork (2)_39
+  - first:
+      213: -6430097186792960646
+    second: Untitled_Artwork (2)_40
+  - first:
+      213: -162092251581807793
+    second: Untitled_Artwork (2)_41
+  - first:
+      213: -448491286453421882
+    second: Untitled_Artwork (2)_42
+  - first:
+      213: 5822053431483965525
+    second: Untitled_Artwork (2)_43
+  - first:
+      213: -4030739959667500058
+    second: Untitled_Artwork (2)_44
+  - first:
+      213: -6431706396365210997
+    second: Untitled_Artwork (2)_45
+  - first:
+      213: 2369554866972291766
+    second: Untitled_Artwork (2)_46
+  - first:
+      213: -4077258814878604574
+    second: Untitled_Artwork (2)_47
+  - first:
+      213: 4459974681552027251
+    second: Untitled_Artwork (2)_48
+  - first:
+      213: -7322808827684762886
+    second: Untitled_Artwork (2)_49
+  - first:
+      213: -4661857648843678970
+    second: Untitled_Artwork (2)_50
+  - first:
+      213: 4420947328102323441
+    second: Untitled_Artwork (2)_51
+  - first:
+      213: 9116129580715544172
+    second: Untitled_Artwork (2)_52
+  - first:
+      213: 5636097888056315842
+    second: Untitled_Artwork (2)_53
+  - first:
+      213: 249674267751608769
+    second: Untitled_Artwork (2)_54
+  - first:
+      213: 5565578844051448658
+    second: Untitled_Artwork (2)_55
+  - first:
+      213: -1397823898918926262
+    second: Untitled_Artwork (2)_56
+  - first:
+      213: -8368418149692557924
+    second: Untitled_Artwork (2)_57
+  - first:
+      213: -2768552509411968073
+    second: Untitled_Artwork (2)_58
+  - first:
+      213: -7492830677031219296
+    second: Untitled_Artwork (2)_59
+  - first:
+      213: 4158095930335341184
+    second: Untitled_Artwork (2)_60
+  - first:
+      213: -45137770430307395
+    second: Untitled_Artwork (2)_61
+  - first:
+      213: -8482762269853385558
+    second: Untitled_Artwork (2)_62
+  - first:
+      213: -4366058749876599273
+    second: Untitled_Artwork (2)_63
+  - first:
+      213: 6695563418046997596
+    second: Untitled_Artwork (2)_64
+  - first:
+      213: -1018355672063268343
+    second: Untitled_Artwork (2)_65
+  - first:
+      213: -1144059283711810592
+    second: Untitled_Artwork (2)_66
+  - first:
+      213: -4559304447023256408
+    second: Untitled_Artwork (2)_67
+  - first:
+      213: -2206851960786944502
+    second: Untitled_Artwork (2)_68
+  - first:
+      213: -5792243136718244090
+    second: Untitled_Artwork (2)_69
+  - first:
+      213: 8753952116197480933
+    second: Untitled_Artwork (2)_70
+  - first:
+      213: 1553451710419890038
+    second: Untitled_Artwork (2)_71
+  - first:
+      213: -4139028476299586
+    second: Untitled_Artwork (2)_72
+  - first:
+      213: 9175647687934895601
+    second: Untitled_Artwork (2)_73
+  - first:
+      213: 2990949469228443189
+    second: Untitled_Artwork (2)_74
+  - first:
+      213: 4894744498796708868
+    second: Untitled_Artwork (2)_75
+  - first:
+      213: -2499395059744826729
+    second: Untitled_Artwork (2)_76
+  - first:
+      213: 2687156828877960009
+    second: Untitled_Artwork (2)_77
+  - first:
+      213: -1689284498178823694
+    second: Untitled_Artwork (2)_78
+  - first:
+      213: -5775646891462409743
+    second: Untitled_Artwork (2)_79
+  - first:
+      213: -2284451539364872991
+    second: Untitled_Artwork (2)_80
+  - first:
+      213: -5889365713726073301
+    second: Untitled_Artwork (2)_81
+  - first:
+      213: -3714505061137100671
+    second: Untitled_Artwork (2)_82
+  - first:
+      213: -1365197003491884963
+    second: Untitled_Artwork (2)_83
+  - first:
+      213: 2646768226742218761
+    second: Untitled_Artwork (2)_84
+  - first:
+      213: -1243085080670920364
+    second: Untitled_Artwork (2)_85
+  - first:
+      213: 479105720854253368
+    second: Untitled_Artwork (2)_86
+  - first:
+      213: 5042564781204043010
+    second: Untitled_Artwork (2)_87
+  - first:
+      213: 1853450831006351792
+    second: Untitled_Artwork (2)_88
+  - first:
+      213: 1476349631784158593
+    second: Untitled_Artwork (2)_89
+  - first:
+      213: -8695968086984825558
+    second: Untitled_Artwork (2)_90
+  - first:
+      213: -400475809882671727
+    second: Untitled_Artwork (2)_91
+  - first:
+      213: -1269244220112906995
+    second: Untitled_Artwork (2)_92
+  - first:
+      213: 8955765126046565685
+    second: Untitled_Artwork (2)_93
+  - first:
+      213: 239843334034765259
+    second: Untitled_Artwork (2)_94
+  - first:
+      213: 953301125808202149
+    second: Untitled_Artwork (2)_95
+  - first:
+      213: -3220825693047532297
+    second: Untitled_Artwork (2)_96
+  - first:
+      213: -8346615828199404773
+    second: Untitled_Artwork (2)_97
+  - first:
+      213: -8490180795818357446
+    second: Untitled_Artwork (2)_98
+  - first:
+      213: -1447105465192722750
+    second: Untitled_Artwork (2)_99
+  - first:
+      213: -6030137952032900865
+    second: Untitled_Artwork (2)_100
+  - first:
+      213: 1152099162838097087
+    second: Untitled_Artwork (2)_101
+  - first:
+      213: -8786902644498792421
+    second: Untitled_Artwork (2)_102
+  - first:
+      213: 3086211804058991288
+    second: Untitled_Artwork (2)_103
+  - first:
+      213: 8011340897908153287
+    second: Untitled_Artwork (2)_104
+  - first:
+      213: 1057689375853580126
+    second: Untitled_Artwork (2)_105
+  - first:
+      213: 3206974636933068883
+    second: Untitled_Artwork (2)_106
+  - first:
+      213: -7648929257050086065
+    second: Untitled_Artwork (2)_107
+  - first:
+      213: -330301711708804843
+    second: Untitled_Artwork (2)_108
+  - first:
+      213: -4777070252377712472
+    second: Untitled_Artwork (2)_109
+  - first:
+      213: 3582191516535826729
+    second: Untitled_Artwork (2)_110
+  - first:
+      213: 2463918494571776099
+    second: Untitled_Artwork (2)_111
+  - first:
+      213: 6374587735643407700
+    second: Untitled_Artwork (2)_112
+  - first:
+      213: 8747081469118320741
+    second: Untitled_Artwork (2)_113
+  - first:
+      213: 7733067664224073178
+    second: Untitled_Artwork (2)_114
+  - first:
+      213: 7398415851025178202
+    second: Untitled_Artwork (2)_115
+  - first:
+      213: 7661028125351331821
+    second: Untitled_Artwork (2)_116
+  - first:
+      213: 3279806086247877196
+    second: Untitled_Artwork (2)_117
+  - first:
+      213: 3186786989734195152
+    second: Untitled_Artwork (2)_118
+  - first:
+      213: 4617327653874654549
+    second: Untitled_Artwork (2)_119
+  - first:
+      213: -2358799354026149776
+    second: Untitled_Artwork (2)_120
+  - first:
+      213: 828066469055714118
+    second: Untitled_Artwork (2)_121
+  - first:
+      213: 3516015164413993097
+    second: Untitled_Artwork (2)_122
+  - first:
+      213: 3558515332409550714
+    second: Untitled_Artwork (2)_123
+  - first:
+      213: -7209098328207071696
+    second: Untitled_Artwork (2)_124
+  - first:
+      213: 6747573045555036566
+    second: Untitled_Artwork (2)_125
+  - first:
+      213: 5177417081449695386
+    second: Untitled_Artwork (2)_126
+  - first:
+      213: -5922962639480702862
+    second: Untitled_Artwork (2)_127
+  - first:
+      213: -5452840429450182623
+    second: Untitled_Artwork (2)_128
+  - first:
+      213: 5533036751019955542
+    second: Untitled_Artwork (2)_129
+  - first:
+      213: -5581606532272014734
+    second: Untitled_Artwork (2)_130
+  - first:
+      213: -7124524286571071358
+    second: Untitled_Artwork (2)_131
+  - first:
+      213: 5796458785759884602
+    second: Untitled_Artwork (2)_132
+  - first:
+      213: 6244337326527813340
+    second: Untitled_Artwork (2)_133
+  - first:
+      213: 3956356931593136268
+    second: Untitled_Artwork (2)_134
+  - first:
+      213: 1694915254414127241
+    second: Untitled_Artwork (2)_135
+  - first:
+      213: -1415945091394705531
+    second: Untitled_Artwork (2)_136
+  - first:
+      213: -6472122411878340690
+    second: Untitled_Artwork (2)_137
+  - first:
+      213: -6857356524323020678
+    second: Untitled_Artwork (2)_138
+  - first:
+      213: -287829498055961141
+    second: Untitled_Artwork (2)_139
+  - first:
+      213: 4724134132791852266
+    second: Untitled_Artwork (2)_140
+  - first:
+      213: 586942377877737705
+    second: Untitled_Artwork (2)_141
+  - first:
+      213: -6801516038081985547
+    second: Untitled_Artwork (2)_142
+  - first:
+      213: 485145701531403652
+    second: Untitled_Artwork (2)_143
+  - first:
+      213: -7134136898484821385
+    second: Untitled_Artwork (2)_144
+  - first:
+      213: -2051277765479934657
+    second: Untitled_Artwork (2)_145
+  - first:
+      213: 8253647648230492961
+    second: Untitled_Artwork (2)_146
+  - first:
+      213: 8757540182599467828
+    second: Untitled_Artwork (2)_147
+  - first:
+      213: 1055449163489724240
+    second: Untitled_Artwork (2)_148
+  - first:
+      213: 5868130225179917517
+    second: Untitled_Artwork (2)_149
+  - first:
+      213: 5083540117525159881
+    second: Untitled_Artwork (2)_150
+  - first:
+      213: -3514238622771804613
+    second: Untitled_Artwork (2)_151
+  - first:
+      213: -3453473571365933049
+    second: Untitled_Artwork (2)_152
+  - first:
+      213: 1239685884268123977
+    second: Untitled_Artwork (2)_153
+  - first:
+      213: 4761878812330235530
+    second: Untitled_Artwork (2)_154
+  - first:
+      213: -8566724590086222542
+    second: Untitled_Artwork (2)_155
+  - first:
+      213: 2863181593907890899
+    second: Untitled_Artwork (2)_156
+  - first:
+      213: -8712119821304896608
+    second: Untitled_Artwork (2)_157
+  - first:
+      213: 5286470709073827105
+    second: Untitled_Artwork (2)_158
+  - first:
+      213: -1168294696952768145
+    second: Untitled_Artwork (2)_159
+  - first:
+      213: -2081746068931641217
+    second: Untitled_Artwork (2)_160
+  - first:
+      213: -2184336052705961540
+    second: Untitled_Artwork (2)_161
+  - first:
+      213: 3544586219418764913
+    second: Untitled_Artwork (2)_162
+  - first:
+      213: 6546005418682894526
+    second: Untitled_Artwork (2)_163
+  - first:
+      213: -6385284127535359395
+    second: Untitled_Artwork (2)_164
+  - first:
+      213: -678150939238138068
+    second: Untitled_Artwork (2)_165
+  - first:
+      213: 4953025244122802816
+    second: Untitled_Artwork (2)_166
+  - first:
+      213: -298635174536167442
+    second: Untitled_Artwork (2)_167
+  - first:
+      213: -1055953217145735074
+    second: Untitled_Artwork (2)_168
+  - first:
+      213: 4344409325057115714
+    second: Untitled_Artwork (2)_169
+  - first:
+      213: 8868798686810503449
+    second: Untitled_Artwork (2)_170
+  - first:
+      213: -1320358158228008888
+    second: Untitled_Artwork (2)_171
+  - first:
+      213: -20169087451427294
+    second: Untitled_Artwork (2)_172
+  - first:
+      213: 2290094425079299695
+    second: Untitled_Artwork (2)_173
+  - first:
+      213: 1381893745728632077
+    second: Untitled_Artwork (2)_174
+  - first:
+      213: -9032710325402811480
+    second: Untitled_Artwork (2)_175
+  - first:
+      213: 3725056567939964019
+    second: Untitled_Artwork (2)_176
+  - first:
+      213: -3005818668797740250
+    second: Untitled_Artwork (2)_177
+  - first:
+      213: -655941855934581175
+    second: Untitled_Artwork (2)_178
+  - first:
+      213: 8877439162082075422
+    second: Untitled_Artwork (2)_179
+  - first:
+      213: 4156663066234603742
+    second: Untitled_Artwork (2)_180
+  - first:
+      213: 2717874402825977224
+    second: Untitled_Artwork (2)_181
+  - first:
+      213: -6601664642556663680
+    second: Untitled_Artwork (2)_182
+  - first:
+      213: 3527664638460155548
+    second: Untitled_Artwork (2)_183
+  - first:
+      213: -2064541937838992792
+    second: Untitled_Artwork (2)_184
+  - first:
+      213: -7594344380573877159
+    second: Untitled_Artwork (2)_185
+  - first:
+      213: -2782548033425046247
+    second: Untitled_Artwork (2)_186
+  - first:
+      213: 1614018467601800236
+    second: Untitled_Artwork (2)_187
+  - first:
+      213: -4061246148316805022
+    second: Untitled_Artwork (2)_188
+  - first:
+      213: 2815966629164140572
+    second: Untitled_Artwork (2)_189
+  - first:
+      213: -3769428739715400331
+    second: Untitled_Artwork (2)_190
+  - first:
+      213: 5974091936675593175
+    second: Untitled_Artwork (2)_191
+  - first:
+      213: -7625821201579789501
+    second: Untitled_Artwork (2)_192
+  - first:
+      213: -1334831436687754184
+    second: Untitled_Artwork (2)_193
+  - first:
+      213: 1346101921202918681
+    second: Untitled_Artwork (2)_194
+  - first:
+      213: -2576648325660405237
+    second: Untitled_Artwork (2)_195
+  - first:
+      213: 974430801589883977
+    second: Untitled_Artwork (2)_196
+  - first:
+      213: -5759324748200870064
+    second: Untitled_Artwork (2)_197
+  - first:
+      213: 288873422366193134
+    second: Untitled_Artwork (2)_198
+  - first:
+      213: -8809637240836774547
+    second: Untitled_Artwork (2)_199
+  - first:
+      213: 507165315416788941
+    second: Untitled_Artwork (2)_200
+  - first:
+      213: 643603487167937188
+    second: Untitled_Artwork (2)_201
+  - first:
+      213: 7507343215311878016
+    second: Untitled_Artwork (2)_202
+  - first:
+      213: 8176666748165043439
+    second: Untitled_Artwork (2)_203
+  - first:
+      213: -1825940110764592348
+    second: Untitled_Artwork (2)_204
+  - first:
+      213: 6932748332685551289
+    second: Untitled_Artwork (2)_205
+  - first:
+      213: 114844144022682695
+    second: Untitled_Artwork (2)_206
+  - first:
+      213: 3870618939021516820
+    second: Untitled_Artwork (2)_207
+  - first:
+      213: -1717624464000252236
+    second: Untitled_Artwork (2)_208
+  - first:
+      213: 6723975741810123164
+    second: Untitled_Artwork (2)_209
+  - first:
+      213: -7568068348159400452
+    second: Untitled_Artwork (2)_210
+  - first:
+      213: -1292800941174646633
+    second: Untitled_Artwork (2)_211
+  - first:
+      213: -9186757482078944934
+    second: Untitled_Artwork (2)_212
+  - first:
+      213: 385254460445790462
+    second: Untitled_Artwork (2)_213
+  - first:
+      213: -1225205289793999678
+    second: Untitled_Artwork (2)_214
+  - first:
+      213: 5931626516686011163
+    second: Untitled_Artwork (2)_215
+  - first:
+      213: 461601273527988855
+    second: Untitled_Artwork (2)_216
+  - first:
+      213: -5124529919555849043
+    second: Untitled_Artwork (2)_217
+  - first:
+      213: 8045631002864659920
+    second: Untitled_Artwork (2)_218
+  - first:
+      213: -5666605145140170846
+    second: Untitled_Artwork (2)_219
+  - first:
+      213: -2722971351035932874
+    second: Untitled_Artwork (2)_220
+  - first:
+      213: 1711002231811110823
+    second: Untitled_Artwork (2)_221
+  - first:
+      213: 6627984647995424242
+    second: Untitled_Artwork (2)_222
+  - first:
+      213: 5415187645041298793
+    second: Untitled_Artwork (2)_223
+  - first:
+      213: 6494011653842314262
+    second: Untitled_Artwork (2)_224
+  - first:
+      213: 7639261614996085422
+    second: Untitled_Artwork (2)_225
+  - first:
+      213: 772957590555048177
+    second: Untitled_Artwork (2)_226
+  - first:
+      213: 4655682054836118841
+    second: Untitled_Artwork (2)_227
+  - first:
+      213: -4587677456305456471
+    second: Untitled_Artwork (2)_228
+  - first:
+      213: -789015091998662779
+    second: Untitled_Artwork (2)_229
+  - first:
+      213: 709817567248234062
+    second: Untitled_Artwork (2)_230
+  - first:
+      213: 1690875693166644057
+    second: Untitled_Artwork (2)_231
+  - first:
+      213: -4431461523487872624
+    second: Untitled_Artwork (2)_232
+  - first:
+      213: -930387813531236319
+    second: Untitled_Artwork (2)_233
+  - first:
+      213: 3689455749290825964
+    second: Untitled_Artwork (2)_234
+  - first:
+      213: 5008611030299841567
+    second: Untitled_Artwork (2)_235
+  - first:
+      213: -6196948188828854523
+    second: Untitled_Artwork (2)_236
+  - first:
+      213: -1367495540536532955
+    second: Untitled_Artwork (2)_237
+  - first:
+      213: 3409066282550518065
+    second: Untitled_Artwork (2)_238
+  - first:
+      213: -8093974858720042609
+    second: Untitled_Artwork (2)_239
+  - first:
+      213: -6373954634954338169
+    second: Untitled_Artwork (2)_240
+  - first:
+      213: 919537058232506748
+    second: Untitled_Artwork (2)_241
+  - first:
+      213: -5924985101608389771
+    second: Untitled_Artwork (2)_242
+  - first:
+      213: 1753278197344861179
+    second: Untitled_Artwork (2)_243
+  - first:
+      213: -3900491690418247696
+    second: Untitled_Artwork (2)_244
+  - first:
+      213: 7499590133923524937
+    second: Untitled_Artwork (2)_245
+  - first:
+      213: 3827805115841524763
+    second: Untitled_Artwork (2)_246
+  - first:
+      213: -6267548373269123034
+    second: Untitled_Artwork (2)_247
+  - first:
+      213: -540402379763832930
+    second: Untitled_Artwork (2)_248
+  - first:
+      213: -4902278105741192345
+    second: Untitled_Artwork (2)_249
+  - first:
+      213: 3647921600790772399
+    second: Untitled_Artwork (2)_250
+  - first:
+      213: -6613986417941244191
+    second: Untitled_Artwork (2)_251
+  - first:
+      213: -8565827012101828028
+    second: Untitled_Artwork (2)_252
+  - first:
+      213: 1888828942577619057
+    second: Untitled_Artwork (2)_253
+  - first:
+      213: -7664586751676240182
+    second: Untitled_Artwork (2)_254
+  - first:
+      213: 7206792776583070133
+    second: Untitled_Artwork (2)_255
+  - first:
+      213: 170162050048480715
+    second: Untitled_Artwork (2)_256
+  - first:
+      213: 7541334529897612226
+    second: Untitled_Artwork (2)_257
+  - first:
+      213: 2539295121220359521
+    second: Untitled_Artwork (2)_258
+  - first:
+      213: -1771131248802698600
+    second: Untitled_Artwork (2)_259
+  - first:
+      213: 5651223477614853035
+    second: Untitled_Artwork (2)_260
+  - first:
+      213: 8704738573045606583
+    second: Untitled_Artwork (2)_261
+  - first:
+      213: -8154926348437115459
+    second: Untitled_Artwork (2)_262
+  - first:
+      213: 3353279044754290971
+    second: Untitled_Artwork (2)_263
+  - first:
+      213: -7974506105075460199
+    second: Untitled_Artwork (2)_264
+  - first:
+      213: 5054167267142009453
+    second: Untitled_Artwork (2)_265
+  - first:
+      213: 7287705131196523198
+    second: Untitled_Artwork (2)_266
+  - first:
+      213: -5772072183769539491
+    second: Untitled_Artwork (2)_267
+  - first:
+      213: 1157512621522099456
+    second: Untitled_Artwork (2)_268
+  - first:
+      213: 5227331431737397349
+    second: Untitled_Artwork (2)_269
+  - first:
+      213: 5681100872440480322
+    second: Untitled_Artwork (2)_270
+  - first:
+      213: -5234868015887502095
+    second: Untitled_Artwork (2)_271
+  - first:
+      213: -1958776400739185028
+    second: Untitled_Artwork (2)_272
+  - first:
+      213: 3435094658920026047
+    second: Untitled_Artwork (2)_273
+  - first:
+      213: 7328164310266783804
+    second: Untitled_Artwork (2)_274
+  - first:
+      213: -5708057507750228873
+    second: Untitled_Artwork (2)_275
+  - first:
+      213: -5483295077451871567
+    second: Untitled_Artwork (2)_276
+  - first:
+      213: 6270290422917736085
+    second: Untitled_Artwork (2)_277
+  - first:
+      213: 5541996272250539109
+    second: Untitled_Artwork (2)_278
+  - first:
+      213: -8067128656014907173
+    second: Untitled_Artwork (2)_279
+  - first:
+      213: 4249129555086049127
+    second: Untitled_Artwork (2)_280
+  - first:
+      213: -6732961742411886855
+    second: Untitled_Artwork (2)_281
+  - first:
+      213: -8135915049466498673
+    second: Untitled_Artwork (2)_282
+  - first:
+      213: -6758493585055421513
+    second: Untitled_Artwork (2)_283
+  - first:
+      213: -8750571964996735191
+    second: Untitled_Artwork (2)_284
+  - first:
+      213: 829578155518256844
+    second: Untitled_Artwork (2)_285
+  - first:
+      213: -4876568715142722066
+    second: Untitled_Artwork (2)_286
+  - first:
+      213: 5048249677872160868
+    second: Untitled_Artwork (2)_287
+  - first:
+      213: -7504672482616932685
+    second: Untitled_Artwork (2)_288
+  - first:
+      213: 5209979839458400212
+    second: Untitled_Artwork (2)_289
+  - first:
+      213: 602443716626279179
+    second: Untitled_Artwork (2)_290
+  - first:
+      213: -2538485257491039896
+    second: Untitled_Artwork (2)_291
+  - first:
+      213: 2221714862598431930
+    second: Untitled_Artwork (2)_292
+  - first:
+      213: -7077436309229304977
+    second: Untitled_Artwork (2)_293
+  - first:
+      213: 2127219387011475937
+    second: Untitled_Artwork (2)_294
+  - first:
+      213: -2608222382590831433
+    second: Untitled_Artwork (2)_295
+  - first:
+      213: -7968314837515243491
+    second: Untitled_Artwork (2)_296
+  - first:
+      213: -1032963641063425082
+    second: Untitled_Artwork (2)_297
+  - first:
+      213: -710589677134792201
+    second: Untitled_Artwork (2)_298
+  - first:
+      213: 1398734602981858341
+    second: Untitled_Artwork (2)_299
+  - first:
+      213: -4548999471178168602
+    second: Untitled_Artwork (2)_300
+  - first:
+      213: 7423625842809286604
+    second: Untitled_Artwork (2)_301
+  - first:
+      213: 2271194956619792506
+    second: Untitled_Artwork (2)_302
+  - first:
+      213: -3487539165085643296
+    second: Untitled_Artwork (2)_303
+  - first:
+      213: -5257666339995105402
+    second: Untitled_Artwork (2)_304
+  - first:
+      213: 8259063146210201526
+    second: Untitled_Artwork (2)_305
+  - first:
+      213: 6018105664264260715
+    second: Untitled_Artwork (2)_306
+  - first:
+      213: -6324639882164541549
+    second: Untitled_Artwork (2)_307
+  - first:
+      213: -6847308678938519825
+    second: Untitled_Artwork (2)_308
+  - first:
+      213: -2374046596155349756
+    second: Untitled_Artwork (2)_309
+  - first:
+      213: -5355837092445717799
+    second: Untitled_Artwork (2)_310
+  - first:
+      213: -1793642452025523175
+    second: Untitled_Artwork (2)_311
+  - first:
+      213: 6920782131224226655
+    second: Untitled_Artwork (2)_312
+  - first:
+      213: 3009150674706994023
+    second: Untitled_Artwork (2)_313
+  - first:
+      213: -1441802691123707456
+    second: Untitled_Artwork (2)_314
+  - first:
+      213: 5903910735095511462
+    second: Untitled_Artwork (2)_315
+  - first:
+      213: 9099258409192768204
+    second: Untitled_Artwork (2)_316
+  - first:
+      213: 4722863370416833521
+    second: Untitled_Artwork (2)_317
+  - first:
+      213: -4598910199234698685
+    second: Untitled_Artwork (2)_318
+  - first:
+      213: 8294155936609045982
+    second: Untitled_Artwork (2)_319
+  - first:
+      213: -4220994430250141439
+    second: Untitled_Artwork (2)_320
+  - first:
+      213: 1780874369980917224
+    second: Untitled_Artwork (2)_321
+  - first:
+      213: 4699402136329069212
+    second: Untitled_Artwork (2)_322
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Untitled_Artwork (2)_0
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 1126
+        width: 267
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a58c99f8ae9dcf60800000000000000
+      internalID: 8056269757015164320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Untitled_Artwork (2)_1
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 1294
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7e2908ac83012900800000000000000
+      internalID: 657810923222281855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Untitled_Artwork (2)_2
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 688
+        width: 734
+        height: 668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa909f9a0e1eaa7b0800000000000000
+      internalID: -5212105263687333457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Untitled_Artwork (2)_3
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 1125
+        width: 267
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a4221a092ab70d0800000000000000
+      internalID: -3423964349622760944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Untitled_Artwork (2)_4
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 1293
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d130c28d5b29b1540800000000000000
+      internalID: 4979735122701714205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Untitled_Artwork (2)_5
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 688
+        width: 218
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94c26c49b5961e460800000000000000
+      internalID: 7269207115611647049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Untitled_Artwork (2)_6
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 688
+        width: 218
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e435c541d6406a500800000000000000
+      internalID: 407017682863149902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Untitled_Artwork (2)_7
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 908
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea400acb93b998e0800000000000000
+      internalID: -1686119103783220506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Untitled_Artwork (2)_8
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 465
+        width: 218
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2032676d004651a90800000000000000
+      internalID: -7343853662596881662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Untitled_Artwork (2)_9
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 464
+        width: 218
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce2f71bda02303e0800000000000000
+      internalID: -2088789871790444860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Untitled_Artwork (2)_10
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 98
+        width: 675
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 880703d633d57ea90800000000000000
+      internalID: -7284751396791881592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Untitled_Artwork (2)_11
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 462
+        width: 218
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032ae9198c4a3ef00800000000000000
+      internalID: 1144939911625744944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Untitled_Artwork (2)_12
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 463
+        width: 218
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b37a4760c8d604870800000000000000
+      internalID: 8665046131231991611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Untitled_Artwork (2)_13
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 403
+        width: 40
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97af08466760e8570800000000000000
+      internalID: 8470715054692563577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Untitled_Artwork (2)_14
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 242
+        width: 222
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8c06f60694929880800000000000000
+      internalID: -8605652565868802930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Untitled_Artwork (2)_15
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 348
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f92b88737054de40800000000000000
+      internalID: 5680253486894885360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Untitled_Artwork (2)_16
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 344
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f0119ff53fd5b00800000000000000
+      internalID: 819078300777385773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Untitled_Artwork (2)_18
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 217
+        width: 243
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ed516464abe4fb0800000000000000
+      internalID: -4661583753295569391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Untitled_Artwork (2)_17
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 440
+        width: 491
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5346ecbfb031dc0800000000000000
+      internalID: -3669576095249451583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 7d1fd7301d7afcd47abd5531e90985ec
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
