@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: "Assets/Aure\u0301lien/Scenes/LevelSelect.unity"
     guid: 0102c40afe7ea439288de6d92ebcb985
   - enabled: 1
-    path: "Assets/Aure\u0301lien/Scenes/Test Level.unity"
+    path: "Assets/Aur\xE9lien/Scenes/Test Level.unity"
     guid: 8664a862b69fd48c78d2d5f096c1f814
   - enabled: 1
     path: Assets/Antoni/Level 1.unity
