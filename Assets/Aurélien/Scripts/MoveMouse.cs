@@ -127,6 +127,7 @@ public class MoveMouse : MonoBehaviour
 
                 theta += Time.deltaTime * speed / radius * orientation;
                 transform.position = center + radius * new Vector2(Mathf.Cos(theta), Mathf.Sin(theta));
+                UpdateTrajectory();
             }
 
             //Flip character orientation
@@ -217,6 +218,6 @@ public class MoveMouse : MonoBehaviour
     private void UpdateTrajectory()
     {
         trajectory.transform.position = center;
-        trajectory.transform.localScale = 2 * radius * Vector3.one;
+        trajectory.transform.localScale = radius * Vector3.one;
     }
 }
