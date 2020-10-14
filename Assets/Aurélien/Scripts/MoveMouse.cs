@@ -72,6 +72,8 @@ public class MoveMouse : MonoBehaviour
                 Idle.SetActive(false);
                 Charging.SetActive(true);
 
+                trajectory.SetActive(true);
+
                 radius = radiusMin;
                 loading = true;
                 pos = c.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -c.transform.position.z));
@@ -117,6 +119,8 @@ public class MoveMouse : MonoBehaviour
                 Idle.SetActive(false);
                 Charging.SetActive(false);
                 Boule.SetActive(true);
+
+                trajectory.SetActive(false);
 
                 theta = Vector2.SignedAngle(new Vector2(1, 0), direction) / 180 * Mathf.PI - orientation * Mathf.PI / 2;
                 moving = true;
