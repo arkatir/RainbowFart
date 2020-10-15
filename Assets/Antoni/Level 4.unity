@@ -41741,6 +41741,10 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0.40392157
       objectReference: {fileID: 0}
+    - target: {fileID: 6097059944714728558, guid: 091b5e7ba4c7746ac9f88d7ec0c1bfca, type: 3}
+      propertyPath: newMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: eab5a4bb06fcfbb43969ec27b4a9fe54, type: 3}
     - target: {fileID: 8762864042966200985, guid: 091b5e7ba4c7746ac9f88d7ec0c1bfca, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -46742,28 +46746,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Background
       objectReference: {fileID: 0}
-    - target: {fileID: 2010149335251045749, guid: 916d26de76a522540a70b54e235d3f53, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 916d26de76a522540a70b54e235d3f53, type: 3}
---- !u!1 &1849733665 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2010149335251045749, guid: 916d26de76a522540a70b54e235d3f53, type: 3}
-  m_PrefabInstance: {fileID: 1849733664}
-  m_PrefabAsset: {fileID: 0}
---- !u!210 &1849733666
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1849733665}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: -20
 --- !u!1001 &1882713907
 PrefabInstance:
   m_ObjectHideFlags: 0
