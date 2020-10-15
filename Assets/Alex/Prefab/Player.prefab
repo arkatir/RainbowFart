@@ -1075,6 +1075,7 @@ MonoBehaviour:
   warp_s: {fileID: 5774761090277635301}
   flip_s: {fileID: 2507024603423874225}
   death_s: {fileID: 2959165865461272626}
+  bouncy_s: {fileID: 0}
   trajectory: {fileID: 6418831462788494266}
   power: {fileID: 2265444823697987249}
   Idle: {fileID: 2265444822551324769}
