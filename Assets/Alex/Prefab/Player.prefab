@@ -1075,7 +1075,6 @@ MonoBehaviour:
   warp_s: {fileID: 5774761090277635301}
   flip_s: {fileID: 2507024603423874225}
   death_s: {fileID: 2959165865461272626}
-  bouncy_s: {fileID: 0}
   trajectory: {fileID: 6418831462788494266}
   power: {fileID: 2265444823697987249}
   Idle: {fileID: 2265444822551324769}
@@ -1208,7 +1207,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fcabb3576b6e6dd41a4536d75faf39a1, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.05
+  m_Volume: 0.1
   m_Pitch: 1.1
   Loop: 1
   Mute: 0
