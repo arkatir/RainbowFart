@@ -44,6 +44,6 @@ public class LevelSelect : MonoBehaviour
 
     public void Quit()
     {
-        SceneManager.LoadScene("TitleScene");
+        SceneManager.LoadScene("MainMenu");
     }
 }
