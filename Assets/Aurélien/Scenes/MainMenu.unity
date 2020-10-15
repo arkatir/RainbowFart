@@ -1100,8 +1100,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17.8, y: 145}
-  m_SizeDelta: {x: 925.05286, y: 634.8273}
+  m_AnchoredPosition: {x: 14.4, y: 98.6}
+  m_SizeDelta: {x: 736.051, y: 491.8816}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!210 &1612251267
 SortingGroup:
