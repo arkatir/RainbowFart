@@ -4,23 +4,16 @@ using UnityEngine;
 
 public class LevelMusic : MonoBehaviour
 {
-    static bool AudioBegin = false;
+    public AudioClip newMusic; //Pick an audio track to play.
 
-    void Awake()
+    public void Awake()
     {
-        if (!AudioBegin)
+        var go = GameObject.Find("GameMusic"); //Finds the game object called Game Music, if it goes by a different name, change this.
+        AudioClip oldMusic = go.GetComponent<AudioSource>().clip;
+        if(oldMusic != newMusic)
         {
-            GetComponent<AudioSource>().Play();
-            DontDestroyOnLoad(gameObject);
-            AudioBegin = true;
-        }
-    }
-    void Update()
-    {
-        if (Application.loadedLevelName != "Level 1")
-        {
-            GetComponent<AudioSource>().Stop();
-            AudioBegin = false;
+            go.GetComponent<AudioSource>().clip = newMusic; //Replaces the old audio with the new one set in the inspector.
+            go.GetComponent<AudioSource>().Play(); //Plays the audio.
         }
     }
 }
