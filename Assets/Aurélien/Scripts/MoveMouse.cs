@@ -186,9 +186,11 @@ public class MoveMouse : MonoBehaviour
                 UpdateTrajectory();
             }
 
+            //Character Rotation when in Freefall
             if (freeFall)
                 transform.Rotate(new Vector3(0, 0, orientation * 20) * Time.deltaTime * 10);
 
+            //Reset character initial Rotation position on immobile
             if (!moving && !freeFall)
                 transform.rotation = Quaternion.Slerp(transform.rotation, originalRotationValue, Time.time * rotationResetSpeed); //Reset character to original rotation
 
