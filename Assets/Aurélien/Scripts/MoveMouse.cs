@@ -13,6 +13,9 @@ public class MoveMouse : MonoBehaviour
     private float theta = 0;
     private float orientation = -1;
     [SerializeField] float speedEps = 0.1f;
+    
+    public Quaternion originalRotationValue; //Reset original rotation
+    float rotationResetSpeed = 1.0f;
 
     //Loading parameters
     [SerializeField] float radiusMin = 1.0f;
@@ -58,6 +61,8 @@ public class MoveMouse : MonoBehaviour
     public GameObject Charging;
     public GameObject Boule;
 
+    
+
     //RainbowTrails
     //public GameObject[] trails;
 
@@ -73,6 +78,8 @@ public class MoveMouse : MonoBehaviour
         Idle.SetActive(true);
         Charging.SetActive(false);
         Boule.SetActive(false);
+
+        originalRotationValue = transform.rotation; // save the initial rotation
 
         //Initialize Trails
         /*trails = new GameObject[7];
@@ -173,10 +180,18 @@ public class MoveMouse : MonoBehaviour
                 Charging.SetActive(false);
                 Boule.SetActive(true);
 
+                
                 theta += Time.deltaTime * speed / radius * orientation;
                 transform.position = center + radius * new Vector2(Mathf.Cos(theta), Mathf.Sin(theta));
                 UpdateTrajectory();
             }
+
+            if (freeFall)
+                transform.Rotate(new Vector3(0, 0, orientation * 20) * Time.deltaTime * 10);
+
+            if (!moving && !freeFall)
+                transform.rotation = Quaternion.Slerp(transform.rotation, originalRotationValue, Time.time * rotationResetSpeed); //Reset character to original rotation
+
 
             //Flip character orientation
             if ((Input.GetKeyDown(KeyCode.F) || Input.GetMouseButtonUp(1)) && !moving)
