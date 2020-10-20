@@ -24,15 +24,15 @@ public class MoveMouse : MonoBehaviour
     private float loadDir = 1;
 
     //Audio parameters
-    [SerializeField] private AudioSource star_s;
-    [SerializeField] private AudioSource jumping_s;
-    [SerializeField] private AudioSource jumpgrunt_s;
-    [SerializeField] private AudioSource landgrunt_s;
-    [SerializeField] private AudioSource rainbow_s;
-    [SerializeField] private AudioSource landing_s;
-    [SerializeField] private AudioSource warp_s;
-    [SerializeField] private AudioSource flip_s;
-    [SerializeField] private AudioSource death_s;
+    [SerializeField] private AudioSource star_s = null;
+    [SerializeField] private AudioSource jumping_s = null;
+    [SerializeField] private AudioSource jumpgrunt_s = null;
+    [SerializeField] private AudioSource landgrunt_s = null;
+    [SerializeField] private AudioSource rainbow_s = null;
+    [SerializeField] private AudioSource landing_s = null;
+    [SerializeField] private AudioSource warp_s = null;
+    [SerializeField] private AudioSource flip_s = null;
+    [SerializeField] private AudioSource death_s = null;
 
     //Mouse position variables
     private Camera c;

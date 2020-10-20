@@ -17,8 +17,8 @@ public class GameManager : MonoBehaviour
     public Image[] stars;
 
     //Audio parameters
-    [SerializeField] private AudioSource victory_s;
-    [SerializeField] private AudioSource restart_s;
+    [SerializeField] private AudioSource victory_s = null;
+    [SerializeField] private AudioSource restart_s = null;
 
     // Start is called before the first frame update
     void Start()
