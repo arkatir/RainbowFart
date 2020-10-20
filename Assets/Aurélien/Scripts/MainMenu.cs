@@ -8,20 +8,9 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    //How To play screen
-    public GameObject howToImage = null;
-
-    //Button management;
-    public GameObject playButton = null; 
-    public GameObject howToButton = null;
-    public GameObject creditsButton = null;
-    public GameObject okButton = null;
-    public GameObject crossButton = null;
-    public GameObject quitButton = null;
-
-    //Button Text update
-    /*public int buttonOffsetX = 3, buttonOffsetY = 12;
-    Vector3 pos;*/
+    //Menu screens
+    //public GameObject howToScreen = null;
+    //public GameObject creditsScreen = null;
 
     // Start is called before the first frame update
     void Start()
@@ -35,16 +24,14 @@ public class MainMenu : MonoBehaviour
 
     }
 
-    public void DisplayHowTo()
+    public void DisplayScreen(GameObject screen)
     {
-        howToImage.SetActive(true);
-        okButton.SetActive(true);
+        screen.SetActive(true);
     }
 
-    public void HideHowTo()
+    public void HideScreen(GameObject screen)
     {
-        howToImage.SetActive(false);
-        okButton.SetActive(false);
+        screen.SetActive(false);
     }
 
     public void LoadLevelSelection()
@@ -56,19 +43,5 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
-
-
-    /*//Button text updates/animations
-    public void UpdateButtonPressedText(Text text) 
-    {
-        pos = text.transform.position;
-        text.transform.position = new Vector3(pos.x + (float)buttonOffsetX, pos.y - (float)buttonOffsetY, pos.z); 
-    }
-
-    public void UpdateButtonReleasedText(Text text)
-    {
-        pos = text.transform.position;
-        text.transform.position = new Vector3(pos.x - (float)buttonOffsetX, pos.y + (float)buttonOffsetY, pos.z);
-    }*/
 
 }
