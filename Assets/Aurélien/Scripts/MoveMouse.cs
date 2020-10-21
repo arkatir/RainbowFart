@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 //using System.Media;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -12,6 +14,7 @@ public class MoveMouse : MonoBehaviour
     private float radius;
     private float theta = 0;
     private float orientation = -1;
+    [SerializeField] float rollSpeed = 1;
     [SerializeField] float speedEps = 0.1f;
     
     public Quaternion originalRotationValue; //Reset original rotation
@@ -46,6 +49,7 @@ public class MoveMouse : MonoBehaviour
     private bool moving = false;
     private bool loading = false;
     private bool freeFall = false;
+    private bool rolling = false;
 
     //Components
     private Rigidbody2D rb;
@@ -96,8 +100,9 @@ public class MoveMouse : MonoBehaviour
     {
         if (!gameManager.gameOver)
         {
-            Idle.SetActive(true);
-            Boule.SetActive(false);
+            //Idle.SetActive(true);
+            //Charging.SetActive(false);
+            //Boule.SetActive(false);
 
             //Initialization of the loading phase
             if (Input.GetMouseButtonDown(0) && !moving && !loading && !freeFall && EventSystem.current.currentSelectedGameObject == null)
@@ -187,16 +192,28 @@ public class MoveMouse : MonoBehaviour
             }
 
             //Character Rotation when in Freefall
-            if (freeFall)
+            if (freeFall || rolling)
+            {
+                Idle.SetActive(false);
+                Charging.SetActive(false);
+                Boule.SetActive(true);
                 transform.Rotate(new Vector3(0, 0, orientation * 20) * Time.deltaTime * 10);
+            }
+
 
             //Reset character initial Rotation position on immobile
-            if (!moving && !freeFall)
+            if (!moving && !freeFall && !rolling)
+            {
+                Idle.SetActive(true);
+                Charging.SetActive(false);
+                Boule.SetActive(false);
                 transform.rotation = Quaternion.Slerp(transform.rotation, originalRotationValue, Time.time * rotationResetSpeed); //Reset character to original rotation
+            }
+                
 
 
             //Flip character orientation
-            if ((Input.GetKeyDown(KeyCode.F) || Input.GetMouseButtonUp(1)) && !moving)
+            if ((Input.GetKeyDown(KeyCode.F) || Input.GetMouseButtonUp(2)) && !moving)
             {
                 flip_s.Play();
 
@@ -207,8 +224,38 @@ public class MoveMouse : MonoBehaviour
                 //trajectory.transform.localScale = new Vector3(-trajectory.transform.localScale.x, trajectory.transform.localScale.y, trajectory.transform.localScale.z);
             }
 
+            //Character Ball Movement
+            if (Input.GetMouseButtonDown(1))
+            {
+                moving = false;
+                rolling = true;
+                rainbow_s.Play();
+
+                Idle.SetActive(false);
+                Charging.SetActive(false);
+                Boule.SetActive(true);
+            }
+
+            if (Input.GetMouseButton(1))
+            {
+                float x = 2;
+                float moveBy = x * rollSpeed;
+                rb.velocity = new Vector2(- orientation * moveBy, rb.velocity.y);
+                transform.Rotate(new Vector3(0, 0, orientation * 20) * Time.deltaTime * 10);
+            }
+
+            if (Input.GetMouseButtonUp(1) && rolling)
+            {
+                rolling = false;
+                freeFall = true;
+                rainbow_s.Stop();
+
+                Idle.SetActive(true);
+                Boule.SetActive(false);
+            }
+
             //Death by falling
-            if(transform.position.y < minY)
+            if (transform.position.y < minY)
             {
                 rainbow_s.Stop(); 
                 death_s.Play();
@@ -291,6 +338,10 @@ public class MoveMouse : MonoBehaviour
 
                 Idle.SetActive(false);
                 Boule.SetActive(true);
+
+                Idle.transform.localScale = new Vector3(-Idle.transform.localScale.x, Idle.transform.localScale.y, Idle.transform.localScale.z);
+                Boule.transform.localScale = new Vector3(-Boule.transform.localScale.x, Boule.transform.localScale.y, Boule.transform.localScale.z);
+                Charging.transform.localScale = new Vector3(-Charging.transform.localScale.x, Charging.transform.localScale.y, Charging.transform.localScale.z);
 
                 Vector2 pivot = transform.position;
                 center = Rotate90(center, pivot, orientation);
