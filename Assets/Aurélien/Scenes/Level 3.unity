@@ -52404,6 +52404,10 @@ PrefabInstance:
       propertyPath: newMusic
       value: 
       objectReference: {fileID: 8300000, guid: 1965a92e3d51a8d40aebe2918aa6d661, type: 3}
+    - target: {fileID: 7547126684962659783, guid: 091b5e7ba4c7746ac9f88d7ec0c1bfca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8762864042966200985, guid: 091b5e7ba4c7746ac9f88d7ec0c1bfca, type: 3}
       propertyPath: m_Name
       value: GameManager

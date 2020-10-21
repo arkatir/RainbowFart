@@ -37474,6 +37474,10 @@ PrefabInstance:
       propertyPath: newMusic
       value: 
       objectReference: {fileID: 8300000, guid: 20a03a49e70fdfb4fb62ae47ecb27c21, type: 3}
+    - target: {fileID: 7547126684962659783, guid: 091b5e7ba4c7746ac9f88d7ec0c1bfca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8762864042143730168, guid: 091b5e7ba4c7746ac9f88d7ec0c1bfca, type: 3}
       propertyPath: m_UiScaleMode
       value: 1
