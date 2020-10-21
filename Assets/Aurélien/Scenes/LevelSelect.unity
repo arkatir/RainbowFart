@@ -239,14 +239,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 195908092}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f38f791929a9e514582cad7fe55d8a7e, type: 3}
+  m_Script: {fileID: 11500000, guid: 47b0f39b49a97254a8caa8a96fd67ae2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   buttonOffsetX: 3
   buttonOffsetY: 12
-  buttonHoverColor: {r: 1, g: 1, b: 1, a: 1}
-  buttonColor: {r: 1, g: 1, b: 1, a: 0.7}
-  fontSize: 36
 --- !u!1001 &290389149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -462,7 +459,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 195908097}
-          m_TargetAssemblyTypeName: UpdateUI, Assembly-CSharp
+          m_TargetAssemblyTypeName: ButtonTextPress, Assembly-CSharp
           m_MethodName: OnButtonPressed
           m_Mode: 2
           m_Arguments:
@@ -478,7 +475,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 195908097}
-          m_TargetAssemblyTypeName: UpdateUI, Assembly-CSharp
+          m_TargetAssemblyTypeName: ButtonTextPress, Assembly-CSharp
           m_MethodName: OnButtonReleased
           m_Mode: 2
           m_Arguments:
@@ -907,7 +904,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberLevels: 1
   numberStars: 3
-  back: {fileID: 0}
 --- !u!4 &911383152
 Transform:
   m_ObjectHideFlags: 0
@@ -944,8 +940,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f38f791929a9e514582cad7fe55d8a7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonOffsetX: 3
-  buttonOffsetY: 12
   buttonHoverColor: {r: 1, g: 1, b: 1, a: 1}
   buttonColor: {r: 1, g: 1, b: 1, a: 0.7}
   fontSize: 40
@@ -1198,8 +1192,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f38f791929a9e514582cad7fe55d8a7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonOffsetX: 3
-  buttonOffsetY: 12
   buttonHoverColor: {r: 1, g: 1, b: 1, a: 1}
   buttonColor: {r: 1, g: 1, b: 1, a: 0.7}
   fontSize: 40
@@ -1477,8 +1469,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f38f791929a9e514582cad7fe55d8a7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonOffsetX: 3
-  buttonOffsetY: 12
   buttonHoverColor: {r: 1, g: 1, b: 1, a: 1}
   buttonColor: {r: 1, g: 1, b: 1, a: 0.7}
   fontSize: 36
@@ -1541,8 +1531,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f38f791929a9e514582cad7fe55d8a7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonOffsetX: 3
-  buttonOffsetY: 12
   buttonHoverColor: {r: 1, g: 1, b: 1, a: 1}
   buttonColor: {r: 1, g: 1, b: 1, a: 0.7}
   fontSize: 40
@@ -1563,8 +1551,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f38f791929a9e514582cad7fe55d8a7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonOffsetX: 3
-  buttonOffsetY: 12
   buttonHoverColor: {r: 1, g: 1, b: 1, a: 1}
   buttonColor: {r: 1, g: 1, b: 1, a: 0.7}
   fontSize: 40
@@ -1761,8 +1747,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f38f791929a9e514582cad7fe55d8a7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonOffsetX: 3
-  buttonOffsetY: 12
   buttonHoverColor: {r: 1, g: 1, b: 1, a: 1}
   buttonColor: {r: 1, g: 1, b: 1, a: 0.7}
   fontSize: 40

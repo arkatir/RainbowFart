@@ -5,7 +5,7 @@ using UnityEngine;
 public class Trampoline : MonoBehaviour
 {
     //Audio parameters
-    [SerializeField] private AudioSource bouncy_s;
+    [SerializeField] private AudioSource bouncy_s = null;
 
     // Start is called before the first frame update
     void Start()

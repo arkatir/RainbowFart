@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - End
   - Audio
+  - ButtonText
   layers:
   - Default
   - TransparentFX

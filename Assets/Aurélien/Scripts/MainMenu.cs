@@ -39,6 +39,12 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("LevelSelect");
     }
 
+    public void ResetParameters(GameObject screen)
+    {
+        PlayerPrefs.DeleteAll();
+        HideScreen(screen);
+    }
+
     public void Quit()
     {
         Application.Quit();
