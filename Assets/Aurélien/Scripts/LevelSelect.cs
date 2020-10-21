@@ -8,7 +8,7 @@ public class LevelSelect : MonoBehaviour
 {
     [SerializeField] int numberLevels = 1;
     [SerializeField] int numberStars = 3;
-    public Image back;
+    //public Image back;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +28,7 @@ public class LevelSelect : MonoBehaviour
             }  
         }
 
-        back.GetComponent<Button>().onClick.AddListener(Quit);
+        //back.GetComponent<Button>().onClick.AddListener(Quit);
     }
 
     // Update is called once per frame
