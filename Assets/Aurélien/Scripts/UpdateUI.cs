@@ -19,15 +19,15 @@ public class UpdateUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     // Test for enter and exit
     public void OnPointerEnter(PointerEventData eventData)
     {
-        GetComponent<Text>().color = buttonHoverColor; // Changes the colour of the text
-        GetComponent<Text>().fontSize = fontSize + (int)Math.Ceiling((double)(fontSize / 10)); //Changes size of text
+        //GetComponent<Text>().color = buttonHoverColor; // Changes the colour of the text
+        //GetComponent<Text>().fontSize = fontSize + (int)Math.Ceiling((double)(fontSize / 10)); //Changes size of text
         //GetComponent<Text>().fontStyle = FontStyle.Bold; //Changes style of text
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        GetComponent<Text>().color = buttonColor;
-        GetComponent<Text>().fontSize = fontSize;
+        //GetComponent<Text>().color = buttonColor;
+        //GetComponent<Text>().fontSize = fontSize;
         //GetComponent<Text>().fontStyle = FontStyle.Normal;
     }
 
