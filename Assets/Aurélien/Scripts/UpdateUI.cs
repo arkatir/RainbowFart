@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; // This is so that it should find the Text component
@@ -13,19 +14,20 @@ public class UpdateUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     Vector3 pos;
     public Color buttonHoverColor = Color.white;
     public Color buttonColor = new Color(1.0f, 1.0f, 1.0f, 0.7f);
+    public int fontSize = 36;
 
     // Test for enter and exit
     public void OnPointerEnter(PointerEventData eventData)
     {
         GetComponent<Text>().color = buttonHoverColor; // Changes the colour of the text
-        GetComponent<Text>().fontSize = 22; //Changes size of text
+        GetComponent<Text>().fontSize = fontSize + (int)Math.Ceiling((double)(fontSize / 10)); //Changes size of text
         //GetComponent<Text>().fontStyle = FontStyle.Bold; //Changes style of text
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         GetComponent<Text>().color = buttonColor;
-        GetComponent<Text>().fontSize = 20;
+        GetComponent<Text>().fontSize = fontSize;
         //GetComponent<Text>().fontStyle = FontStyle.Normal;
     }
 
