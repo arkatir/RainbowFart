@@ -6,11 +6,14 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject canvas;
+    private UIManager uiScript;
+
     public bool gameOver = false;
-    public Text gameOverText;
-    public Text victoryText;
+    public GameObject gameOverScreen;
+    public GameObject victoryScreen;
     public Text jumpText;
-    public Image prefMenu;
+    public Image pauseMenu;
     public bool timeMove = false;
     public float jumpCounter = 0;
     public int levelNumber;
@@ -23,6 +26,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        uiScript = canvas.GetComponent<UIManager>();
+
         for (int i = 0; i < 3; i++)
         {
             string starName = "Star" + levelNumber + (i+1);
@@ -47,7 +52,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        gameOverText.gameObject.SetActive(true);
+        uiScript.DisplayScreen(gameOverScreen); 
         gameOver = true;
     }
 
@@ -55,28 +60,21 @@ public class GameManager : MonoBehaviour
     {
         victory_s.Play();
         
-        victoryText.gameObject.SetActive(true);
+        uiScript.DisplayScreen(victoryScreen);
+
         gameOver = true;
     }
 
     public void Restart()
     {
         restart_s.PlayOneShot(restart_s.clip, 1.0F);
-        gameOverText.gameObject.SetActive(false);
-        victoryText.gameObject.SetActive(false);
+
+        uiScript.HideScreen(victoryScreen);
+        uiScript.HideScreen(gameOverScreen);
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         //SceneManager.LoadScene("LevelSelect");
         gameOver = false;
-    }
-
-    public void DisplayPreferences()
-    {
-        prefMenu.gameObject.SetActive(true);
-    }
-
-    public void Resume()
-    {
-        prefMenu.gameObject.SetActive(false);
     }
 
     public void DisplayStar(int i)

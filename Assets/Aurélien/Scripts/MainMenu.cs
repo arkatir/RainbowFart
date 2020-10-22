@@ -12,6 +12,16 @@ public class MainMenu : MonoBehaviour
     //public GameObject howToScreen = null;
     //public GameObject creditsScreen = null;
 
+    //UI Script
+    public GameObject canvas;
+    private UIManager uiScript;
+
+
+    void Awake()
+    {
+        uiScript = canvas.GetComponent<UIManager>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,16 +34,6 @@ public class MainMenu : MonoBehaviour
 
     }
 
-    public void DisplayScreen(GameObject screen)
-    {
-        screen.SetActive(true);
-    }
-
-    public void HideScreen(GameObject screen)
-    {
-        screen.SetActive(false);
-    }
-
     public void LoadLevelSelection()
     {
         SceneManager.LoadScene("LevelSelect");
@@ -42,7 +42,7 @@ public class MainMenu : MonoBehaviour
     public void ResetParameters(GameObject screen)
     {
         PlayerPrefs.DeleteAll();
-        HideScreen(screen);
+        uiScript.HideScreen(screen);
     }
 
     public void Quit()
