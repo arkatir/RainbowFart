@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Security.Cryptography;
 //using System.Media;
 using UnityEngine;
@@ -65,8 +66,6 @@ public class MoveMouse : MonoBehaviour
     public GameObject Charging;
     public GameObject Boule;
 
-    
-
     //RainbowTrails
     //public GameObject[] trails;
 
@@ -76,7 +75,7 @@ public class MoveMouse : MonoBehaviour
         c = Camera.main;
         rb = GetComponent<Rigidbody2D>();
         powerArrow = power.transform.GetChild(0).gameObject;
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();                
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 
         //Initialize animation
         Idle.SetActive(true);
@@ -357,6 +356,9 @@ public class MoveMouse : MonoBehaviour
 
             string starName = collision.gameObject.name;
             PlayerPrefs.SetInt(starName, 1);
+
+            gameManager.DisplayStar(2 * (int.Parse(starName.Substring(starName.Length - 1)) - 1));
+
             collision.gameObject.SetActive(false);
         }
 

@@ -18,8 +18,8 @@ public class LevelSelect : MonoBehaviour
             GameObject level = GameObject.Find("Level " + (i+1));
             for (int j = 0; j < numberStars; j++)
             {
-                GameObject star = level.transform.GetChild(j).gameObject;
-                GameObject starGrey = level.transform.GetChild(j + numberStars).gameObject;
+                GameObject star = level.transform.GetChild(2*j + 1).gameObject;
+                GameObject starGrey = level.transform.GetChild(2*j).gameObject;
                 if (PlayerPrefs.GetInt("Star" + (i+1) + (j+1)) == 1)
                 {
                     star.SetActive(true);

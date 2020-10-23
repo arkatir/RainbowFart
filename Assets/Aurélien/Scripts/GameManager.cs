@@ -1,8 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
+using System.Linq;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Diagnostics;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,6 +16,7 @@ public class GameManager : MonoBehaviour
     public bool gameOver = false;
     public GameObject gameOverScreen;
     public GameObject victoryScreen;
+    public GameObject uiBar;
     public Text jumpText;
     public Image pauseMenu;
     public bool timeMove = false;
@@ -28,12 +33,14 @@ public class GameManager : MonoBehaviour
     {
         uiScript = canvas.GetComponent<UIManager>();
 
+        levelNumber = Int32.Parse(string.Join(string.Empty, Regex.Matches(SceneManager.GetActiveScene().name, @"\d+").OfType<Match>().Select(m => m.Value)));
+
         for (int i = 0; i < 3; i++)
         {
             string starName = "Star" + levelNumber + (i+1);
             if(PlayerPrefs.GetInt(starName) == 1)
             {
-                DisplayStar(i);
+                DisplayStar(2*i);
             }
         }
     }
@@ -59,8 +66,19 @@ public class GameManager : MonoBehaviour
     public void Victory()
     {
         victory_s.Play();
-        
+
+        uiScript.HideScreen(uiBar);
         uiScript.DisplayScreen(victoryScreen);
+
+        //Display of victory stars
+        for (int i = 0; i < 3; i++)
+        {
+            string starName = "Star" + levelNumber + (i + 1);
+            if (PlayerPrefs.GetInt(starName) == 1)
+            {
+                DisplayStar(stars.Length / 2 + 2 * i);
+            }
+        }
 
         gameOver = true;
     }
@@ -79,8 +97,9 @@ public class GameManager : MonoBehaviour
 
     public void DisplayStar(int i)
     {
-        stars[i].gameObject.SetActive(true);
-        stars[i + 3].gameObject.SetActive(false);
+        stars[i].gameObject.SetActive(false);
+        stars[i + 1].gameObject.SetActive(true);
+
     }
 
     public void Quit()
