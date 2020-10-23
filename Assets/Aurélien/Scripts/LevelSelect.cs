@@ -15,12 +15,12 @@ public class LevelSelect : MonoBehaviour
     {
         for (int i = 0; i < numberLevels; i++)
         {
-            GameObject level = GameObject.Find("Level " + (i+1));
+            GameObject level = GameObject.Find("Level " + i);
             for (int j = 0; j < numberStars; j++)
             {
                 GameObject star = level.transform.GetChild(2*j + 1).gameObject;
                 GameObject starGrey = level.transform.GetChild(2*j).gameObject;
-                if (PlayerPrefs.GetInt("Star" + (i+1) + (j+1)) == 1)
+                if (PlayerPrefs.GetInt("Star" + i + (j+1)) == 1)
                 {
                     star.SetActive(true);
                     starGrey.SetActive(false);
