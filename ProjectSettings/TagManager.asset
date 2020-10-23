@@ -11,6 +11,7 @@ TagManager:
   - Audio
   - ButtonText
   - Jumper
+  - Tilemap
   layers:
   - Default
   - TransparentFX

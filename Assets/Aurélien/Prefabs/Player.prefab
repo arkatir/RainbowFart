@@ -11754,6 +11754,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   minY: -10
+  rollSpeed: 1
   speedEps: 0.4
   originalRotationValue: {x: 0, y: 0, z: 0, w: 0}
   radiusMin: 1
