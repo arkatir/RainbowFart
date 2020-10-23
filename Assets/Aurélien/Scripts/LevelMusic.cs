@@ -9,11 +9,14 @@ public class LevelMusic : MonoBehaviour
     public void Awake()
     {
         var go = GameObject.Find("GameMusic"); //Finds the game object called Game Music, if it goes by a different name, change this.
-        AudioClip oldMusic = go.GetComponent<AudioSource>().clip;
-        if(oldMusic != newMusic)
+        if (go)
         {
-            go.GetComponent<AudioSource>().clip = newMusic; //Replaces the old audio with the new one set in the inspector.
-            go.GetComponent<AudioSource>().Play(); //Plays the audio.
+            AudioClip oldMusic = go.GetComponent<AudioSource>().clip;
+            if (oldMusic != newMusic)
+            {
+                go.GetComponent<AudioSource>().clip = newMusic; //Replaces the old audio with the new one set in the inspector.
+                go.GetComponent<AudioSource>().Play(); //Plays the audio.
+            }
         }
     }
 }
