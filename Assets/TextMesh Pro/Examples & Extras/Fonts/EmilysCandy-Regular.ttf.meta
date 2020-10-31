@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: ac591eff9c75f6843964fb2b1e35c2ce
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Emilys Candy
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d0dd96af4221cdc4badd93cc1ef0909b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

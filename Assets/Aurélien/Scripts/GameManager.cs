@@ -25,8 +25,8 @@ public class GameManager : MonoBehaviour
     public Image[] stars;
 
     //Audio parameters
-    [SerializeField] private AudioSource victory_s = null;
-    [SerializeField] private AudioSource restart_s = null;
+    //[SerializeField] private AudioSource victory_s = null;
+    //[SerializeField] private AudioSource restart_s = null;
 
     // Start is called before the first frame update
     void Start()
@@ -65,7 +65,8 @@ public class GameManager : MonoBehaviour
 
     public void Victory()
     {
-        victory_s.Play();
+        AudioManager.instance.Play("Sound - Success");
+        //victory_s.Play();
 
         uiScript.HideScreen(uiBar);
         uiScript.DisplayScreen(victoryScreen);
@@ -85,7 +86,8 @@ public class GameManager : MonoBehaviour
 
     public void Restart()
     {
-        restart_s.PlayOneShot(restart_s.clip, 1.0F);
+        //restart_s.PlayOneShot(restart_s.clip, 1.0F);
+        AudioManager.instance.Play("Sound - Restart");
 
         uiScript.HideScreen(victoryScreen);
         uiScript.HideScreen(gameOverScreen);
